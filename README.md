@@ -2,7 +2,7 @@
 
 # The best is yet to come!
 
-Design [Elvish](http://themesboss.com/elvish/blog-sidebar.html)
+Design [Elvish](http://themesboss.com/elvish/index_6.html)
 
 
 ## Authors:
