@@ -1,0 +1,21 @@
+header {
+    background-color: aqua;
+    display: inline-block;
+    width: 100%;
+}
+
+header > img {
+    display: inline-block;
+    height: 70px;
+    padding: 20px 30px;
+    margin-left: 50px;
+}
+header > nav {
+    display: inline;
+    float: right;
+    line-height: 20px;
+    padding: 30px;
+}
+header > nav > a {
+    padding: 0px 10px;
+}
