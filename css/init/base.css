@@ -1,0 +1,10 @@
+.main_headers{
+    text-transform: capitalize;
+    font-size: 35px;
+    color: #000;
+}
+
+.paragraph{
+    font-size: 20px;
+    color: #6c757d;
+}
