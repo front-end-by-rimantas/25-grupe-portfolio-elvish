@@ -1,10 +1,25 @@
-.main_headers{
+.main_headings{
     text-transform: capitalize;
     font-size: 35px;
     color: #000;
+    font-weight: 500;
+}
+.main_headings > span{
+    font-weight: 600;
 }
 
 .paragraph{
-    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
     color: #6c757d;
+    font-weight: 600;
 }
+
+.asterisk::before, .asterisk::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #e9ecef;
+    width: 2rem;
+    margin: 7px 0.5rem;
+}
+
