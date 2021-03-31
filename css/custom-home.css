@@ -13,33 +13,9 @@
 /* header */
 
 /* hero */
-.hero-100 {
-    height: 100vh;
-    background-image: url('../img/home-bg.jpg');
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-}
-
-.container-table {
-    height: 100%;
-    width: 100%;
+section {
     padding-top: 70px;
     padding-bottom: 70px;
-    display: table;
-}
-
-.center-content {
-    display: table-cell;
-    vertical-align: middle;
-    color: white;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.center-content > .cv-btn {
-    color: white;
-    text-decoration: none;
 }
 /* about me */
 
