@@ -39,7 +39,6 @@
   .container-fluid > .row {
     display: inline-block;
     width: 100%;
-    background-color: lightcyan;
     margin: 10px 0;
   }
   .row > [class*='col-'] {

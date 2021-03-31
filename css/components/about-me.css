@@ -1,0 +1,42 @@
+@import './progress.css';
+.about_me_texts{
+    text-align: center;
+}
+.elvish_sign{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.hello{
+    font-size: 30px;
+    font-weight: 400;
+}
+.hello > span{
+    font-weight: 700;
+}
+.professions{
+    line-height: 25px;
+    font-size: 18px;
+    color: var(--color-grey);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.profession {
+    display: inline-block;
+    position: relative;
+    padding-inline: 20px;
+}
+.before_after_dots::before, .before_after_dots::after{
+    display:inline-block;
+    position: absolute;
+    content: "●";
+    font-size: 10px;
+    color: #6c757d;;
+}
+.before_after_dots::before{
+    left: -5px;
+    top: 1px;
+}
+.before_after_dots::after{
+    right: -6px;
+    top: 1px;
+}

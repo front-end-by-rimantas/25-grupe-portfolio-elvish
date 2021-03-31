@@ -1,0 +1,37 @@
+.progress_col{
+    float:left;
+} 
+
+.progress_area{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.progress_text, .progress_percent{
+    text-align: start;
+    float: left;
+    width: 50%;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+.progress_percent{
+    text-align: end;
+    float: right;
+    font-weight: normal;
+    color: var(--color-grey);
+}
+
+.progress_bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--color-grey-light);
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+.progress_inner{
+    height: 4px;
+    background-color: var(--color-main);
+    border-radius: 2px 0 0 2px;
+} 
