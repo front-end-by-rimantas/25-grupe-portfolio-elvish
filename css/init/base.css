@@ -1,4 +1,5 @@
 .main_headings{
+    font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     font-size: 35px;
     color: #000;
@@ -9,7 +10,6 @@
 }
 
 .paragraph{
-    font-family: 'Nunito', sans-serif;
     font-size: 17px;
     color: #6c757d;
     font-weight: 600;
