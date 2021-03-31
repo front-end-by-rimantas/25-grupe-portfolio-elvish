@@ -12,18 +12,22 @@
 
 <body>
     <!-- HEADER START -->
-    <header>
-        <a class="logo-button" href="./"><img src="./img/logo.png" alt="logo"></a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Education</a>
-            <a href="#">Work</a>
-            <a href="#">Client</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </nav>
+    <header class="container-fluid header-bar">
+        <div class="row">
+            <a class="col-2 ml-1"  href="./"><img class=" logo-img" src="./img/logo.png" alt="logo"></a>
+            <a class="hidden col-2 ml-1" href="./"><img class=" logo-img" src="./img/logo-blakc.png" alt="logo"></a>
+            <nav class="hidden visible-lg meniu-nav">
+                <a class="meniu-bar-selector" href="#">Home</a>
+                <a class="meniu-bar-selector" href="#">About</a>
+                <a class="meniu-bar-selector" href="#">Services</a>
+                <a class="meniu-bar-selector" href="#">Education</a>
+                <a class="meniu-bar-selector" href="#">Work</a>
+                <a class="meniu-bar-selector" href="#">Client</a>
+                <a class="meniu-bar-selector" href="#">Blog</a>
+                <a class="meniu-bar-selector" href="#">Contact</a>
+            </nav>
+            <a class="hidden-lg meniu-bar-icon meniu-nav" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>
     </header>
     <!-- HEADER END -->
     
@@ -58,7 +62,74 @@
     <!-- ABOUT ME START-->
     <div class="container">
         <div class="row">
-            CONTENT
+            <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 about_me_texts">
+                <h2 class="main_headings"><span>About</span> me</h2>
+                <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
+                <p class="paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-10 ml-lg-1 col-xl-8 ml-xl-2 about_me_texts">
+                <img class="elvish_sign" src="./img/sign.png" alt="Sign">
+                <h2 class="main_headings hello">Hello! <span>I'M Elvish Walters.</span></h2>
+                <div class="professions">
+                    <div class="profession">UI/UX Designer</div>
+                    <div class="profession before_after_dots">Photographer</div>
+                    <div class="profession">Developer</div>
+                </div>
+                <p class="paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                </div>
+            </div>
+        
+        </div>
+        <div class="row">
+                <div class="col-12 col-lg-6 col-xxl-5 ml-xxl-1 progress_col">
+                <div class="progress_area">
+                    <div class="progress_text">Development</div>
+                    <div class="progress_percent">80%</div>
+                    <div class="progress_bar">
+                        <div class="progress_inner" role="progressbar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="progress_area">
+                    <div class="progress_text">WordPress</div>
+                    <div class="progress_percent">59%</div>
+                    <div class="progress_bar">
+                        <div class="progress_inner" role="progressbar" style="width: 59%"></div>
+                    </div>
+                </div>
+                <div class="progress_area">
+                    <div class="progress_text">Photoshop</div>
+                    <div class="progress_percent">88%</div>
+                    <div class="progress_bar">
+                        <div class="progress_inner" role="progressbar" style="width: 88%"></div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xxl-5  progress_col">
+                <div class="progress_area">
+                    <div class="progress_text">Html</div>
+                    <div class="progress_percent">96%</div>
+                    <div class="progress_bar">
+                        <div class="progress_inner" role="progressbar" style="width: 96%"></div>
+                    </div>
+                </div>
+                <div class="progress_area">
+                    <div class="progress_text">Css</div>
+                    <div class="progress_percent">70%</div>
+                    <div class="progress_bar">
+                        <div class="progress_inner" role="progressbar" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="progress_area">
+                    <div class="progress_text">Asp.net</div>
+                    <div class="progress_percent">58%</div>
+                    <div class="progress_bar">
+                        <div class="progress_inner" role="progressbar" style="width: 58%"></div>
+                    </div>
+                </div>
+                </div>  
+                
         </div>
     </div>
     <!-- ABOUT ME END-->
@@ -72,17 +143,63 @@
     <!-- NUMBERS END-->
 
     <!-- EDUCATION AND EXPERIENCE START-->
-    <div class="container">
+    <div class="container education-container">
         <div class="row">
-            CONTENT
+            <div class="col-12 col-md-10 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3 education-text">
+                <h2 class="main_headings"><span>Education & experience</span></h2>
+                <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
+                <p class="paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row container-row">
+                <div class="col-12 col-lg-5 ml-lg-1 experience-column">
+                    <div class="experience">
+                        <h3>2010 - 2014</h3>
+                        <h3>Studied at cambridge university</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti eum tempore est.</p>
+                    </div>
+                    <div class="experience">
+                        <h3>2014 - 2016</h3>
+                        <h3>Master in computer science</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis adipisci impedit voluptates iure.</p>
+                    </div>
+                    <div class="experience">
+                        <h3>2016-2018</h3>
+                        <h3>UI/UX Designer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore perspiciatis architecto minus?</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 ml-lg-1 experience-column">
+                    <div class="experience">
+                        <h3>2010 - 2014</h3>
+                        <h3>Senior graphic designer</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis earum natus et modi.</p>
+                    </div>
+                    <div class="experience">
+                        <h3>2014 - 2016</h3>
+                        <h3>Web developer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed deserunt harum. Voluptatem.</p>
+                    </div>
+                    <div class="experience">
+                        <h3>2016 - 2018</h3>
+                        <h3>Freelancer and themeforest</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in illum tempora facere.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- EDUCATION AND EXPERIENCE END-->
 
     <!-- HIRE ME START-->
-    <div class="container bg-img">
-        <div class="row">
-            CONTENT
+    <div class="hire-me-background">
+        <div class="background-overlay"></div>   
+        <div class="container hire-me-details">
+            <div class="row hire-me">
+                <h2>I am available for freelancer.</h2>
+                <button>Hire me!</button>            
+            </div>
         </div>
     </div>
     <!-- HIRE ME END-->
@@ -105,8 +222,21 @@
 
     <!-- GREAT PEOPLE START-->
     <div class="container bg-grey">
-        <div class="row">
-            CONTENT
+        <div class="row great-people">
+            <div class="col-12 col-sm-10 ml-sm-1 col-md-8 ml-md-2 col-lg-6 ml-lg-3 great-people"> 
+                <h2 class="main_headings">Trusted by <span>great people</span></h2>
+                <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
+                <p class="paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        <div class="row great-people clients">
+                <div class="col-12 col-lg-2"><img src="./img/clients/1.png" alt="Coffee chocolate"></div>
+                <div class="col-12 col-lg-2"><img src="./img/clients/2.png" alt="Fisherman"></div>
+                <div class="col-12 col-lg-2"><img src="./img/clients/3.png" alt="Mountainbike"></div>
+                <div class="col-12 col-lg-2"><img src="./img/clients/4.png" alt="Mountain"></div>
+                <div class="col-12 col-lg-2"><img src="./img/clients/5.png" alt="Chocolate"></div>
+                <div class="col-12 col-lg-2"><img src="./img/clients/6.png" alt="Market"></div>
+            </div>
+        </div>
         </div>
     </div>
     <!-- GREAT PEOPLE END-->
