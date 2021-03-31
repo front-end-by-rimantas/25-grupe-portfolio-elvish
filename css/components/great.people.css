@@ -1,0 +1,13 @@
+.great-people{
+    text-align: center;
+}
+.great-people > div {
+    display:inline-block;
+}
+.clients{
+    margin-top: 50px;
+}
+.great-people > div > img {
+    height: 100px;
+    max-width: 150px;
+}
