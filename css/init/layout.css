@@ -32,7 +32,8 @@
   .container-fluid {
     display: inline-block;
     width: 100%;
-    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .container > .row,
   .container-fluid > .row {
