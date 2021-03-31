@@ -6,8 +6,19 @@
 /* 3rd party */
 @import './3rd-party/font-awesome.min.css';
 /* components */
+@import './components/about-me.css';
+@import './components/education.css';
+@import './components/blog.css';
 @import './components/footer.css';
+@import './components/get-in-touch.css';
+@import './components/great.people.css';
 @import './components/header.css';
+@import './components/hero.css';
+@import './components/hire-me.css';
+@import './components/numbers.css';
+@import './components/our-client.css';
+@import './components/our-services.css';
+
 
 /* CUSTOM STILIUS SEKCIJOMS */
 /* header */
