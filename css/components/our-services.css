@@ -1,0 +1,8 @@
+.before_after_dots::before, .before_after_dots::after{
+    display:inline-block;
+    position: absolute;
+    content: "●";
+    font-size: 10px;
+    color: #6c757d;;
+}
+
