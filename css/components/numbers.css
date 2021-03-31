@@ -4,8 +4,9 @@
 
     background-position: center;
 }
-.icon-and-data {
+.numbers {
     color: #fff;
     text-align: center;
     border: 1px dashed #fff;
+    padding: 24px;
 }
