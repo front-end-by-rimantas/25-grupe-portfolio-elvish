@@ -13,3 +13,8 @@
 .container > .row > .services_item > .paragraph {
     color:  #6c757d;
 }
+
+.container > .row > .services_item {
+    border: 10px;
+    border-color: #6c757d;
+}
