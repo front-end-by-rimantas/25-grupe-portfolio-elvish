@@ -1,4 +1,8 @@
-.before_after_dots::before, .before_after_dots::after{
+.span {
+    font-weight: 700;
+}
+
+.before_after_dots::before, .before_after_dots::after {
     display:inline-block;
     position: absolute;
     content: "●";
@@ -6,3 +10,6 @@
     color: #6c757d;;
 }
 
+.container > .row > .services_item > .paragraph {
+    color:  #6c757d;
+}
