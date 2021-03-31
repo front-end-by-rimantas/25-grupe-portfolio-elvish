@@ -28,10 +28,11 @@ section {
 
 .just-centered {
     justify-content: center!important;
+    text-align: center;
 }
 
 .hero-socials-list {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     padding: 0;
     margin: 0;
@@ -64,4 +65,5 @@ section {
     cursor: pointer;
     color: white;
     border-color: white;
+    text-align: center;
 }
