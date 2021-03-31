@@ -6,10 +6,10 @@ Design [Elvish](http://themesboss.com/elvish/index_6.html)
 
 
 ## Authors:
-- Irmantas Jokšas
-- Asta Juodelytė
-- Jolanta Kriščiukaitė
-- Linas Kriščiukaitis
-- Tomas Mirinavičius
-- Tomas Vaitkus
+- [Irmantas](https://github.com/naciort)
+- [Asta](https://github.com/juosta)
+- [Jolanta](https://github.com/JolantaKrisciukaite)
+- [Linas](https://github.com/LinasKri)
+- [Tomas M.](https://github.com/TomasTheDankEngine)
+- [Tomas V.](https://github.com/Meskiniukas)
 
