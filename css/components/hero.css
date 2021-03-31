@@ -24,6 +24,7 @@ section {
 .center-content {
     display: table-cell;
     vertical-align: middle;
+    text-transform: capitalize;
 }
 
 .just-centered {
@@ -31,11 +32,19 @@ section {
     text-align: center;
 }
 
+.just-centered h2 {
+    font-size: 70px;
+}
+
 .hero-socials-list {
     /* display: flex; */
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+.hero-socials-list a{
+    padding: 15px;
 }
 
 .hero-socials-list li {
@@ -55,15 +64,25 @@ section {
 
 .cv-btn {
     display: inline-block;
-    padding: 15px 30px;
+    margin-top: 40px;
+    padding: 15px;
     border: solid 2px;
     background-color: transparent;
     border-radius: 40px;
     line-height: 20px;
-    font-size: 17px;
+    font-size: 15px;
     text-decoration: none;
+    letter-spacing: 1px;
     cursor: pointer;
     color: white;
     border-color: white;
     text-align: center;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.cv-btn:hover{
+    background-color: white;
+    color: black;
+    /* transition: 1s ease-in-out; */
 }

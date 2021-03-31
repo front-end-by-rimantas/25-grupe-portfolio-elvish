@@ -46,7 +46,7 @@
     float: left;
     margin-left: var(--half-gap);
     margin-right: var(--half-gap);
-    background-color: yellow;
+    /* background-color: yellow; */
   }
   .row > .col-1 {
     width: var(--col1);
