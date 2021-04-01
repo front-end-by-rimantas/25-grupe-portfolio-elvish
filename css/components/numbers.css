@@ -4,6 +4,10 @@
 
     background-position: center;
 }
+.numbers-bg > .container {
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
 .numbers {
     color: #fff;
     text-align: center;
@@ -12,14 +16,14 @@
     margin-top: 1rem;
     width: 205px;
 }
-.numbers-bg > .container > .row > .numbers > .num-icon {
+.numbers > .num-icon {
     line-height: 45px;
     font-size: 40px;
 }
-.numbers-bg > .container > .row > .numbers > h1 {
+.numbers > h1 {
     font-size: 48px;
     color: #fff;
 }
-.numbers-bg > .container > .row > .numbers > .num-parag {
+.numbers > .num-parag {
     color: #ffffffb3;
 }
