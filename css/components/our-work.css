@@ -1,3 +1,20 @@
-.our-work .work-menu {
+.our-work .work-menu-button {
     display: inline-block;
+}
+.our-work .work-menu{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.work-menu-button{
+    font-size: 14px;
+    padding: 6px 3px;
+    margin-bottom: 20px;
+}
+
+.work-menu-button:hover{
+    background-color: var(--color-main);
+    color:white;
+    border-radius: 5px;
+    padding: 6px 3px;
+    transition: all 0.5s;
 }
