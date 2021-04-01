@@ -13,5 +13,13 @@
     width: 205px;
 }
 .numbers-bg > .container > .row > .numbers > .num-icon {
+    line-height: 45px;
     font-size: 40px;
+}
+.numbers-bg > .container > .row > .numbers > h1 {
+    font-size: 48px;
+    color: #fff;
+}
+.numbers-bg > .container > .row > .numbers > .num-parag {
+    color: #ffffffb3;
 }
