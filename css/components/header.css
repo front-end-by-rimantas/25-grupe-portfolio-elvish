@@ -22,9 +22,10 @@
     position: relative;
 }
 .meniu-bar-selector:hover {
-    color: white;
+    color: white;    
 }
-.meniu-bar-selector:hover::before {
+.meniu-bar-selector::before {
+    display: none;
     content: '';
     border: 1px solid white;
     width: 4px;
@@ -35,8 +36,9 @@
     left: 50%;
     top: 120%;
     transform: translateX(-50%);
-    transition: all 0.3s ease 0s;
-
+}
+.meniu-bar-selector:hover::before {
+    display: inline-block;
 }
 .meniu-bar-icon {
     color: white;
