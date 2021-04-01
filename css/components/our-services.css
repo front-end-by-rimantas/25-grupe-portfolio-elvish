@@ -15,6 +15,5 @@
 }
 
 .container > .row > .services_item {
-    border: 10px;
-    border-color: #6c757d;
+    text-align: center;
 }
