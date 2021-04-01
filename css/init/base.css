@@ -1,11 +1,11 @@
-.bg-grey{
+.bg-grey {
     background-color: var(--color-grey-lighter);
 }
-.bg-img{
+.bg-img {
     background-color: var(--color-grey);
 }
 
-.main_headings{
+.main_headings {
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     font-size: 35px;
@@ -17,7 +17,7 @@
     font-weight: 700;
 }
 
-.paragraph{
+.paragraph {
     font-size: 16px;
     color: var(--color-grey);
     font-weight: 400;
@@ -32,5 +32,9 @@
     border-top: 1px solid var(--color-grey-light);
     width: 2rem;
     margin: 7px 0.5rem;
+}
+
+.center {
+    text-align: center;
 }
 
