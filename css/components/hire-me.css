@@ -2,6 +2,7 @@
     background-image: url(../../img/hireMeBackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     position: relative;
     padding: 80px 0;
 }
@@ -50,3 +51,6 @@
     cursor: pointer;
     outline: none;
 }
+.hire-me > button:not(:hover) {
+    transition: all 0.8s;
+    }
