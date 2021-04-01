@@ -11,3 +11,6 @@
     padding: 24px;
     margin-top: 1rem;
 }
+.numbers-bg > .container > .row > .numbers > .num-icon {
+    font-size: 40px;
+}
