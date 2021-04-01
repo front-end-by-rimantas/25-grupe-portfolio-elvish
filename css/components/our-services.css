@@ -1,7 +1,3 @@
-.main_headings > span {
-    font-weight: 700;
-}
-
 .before_after_dots::before, .before_after_dots::after {
     display:inline-block;
     position: absolute;
