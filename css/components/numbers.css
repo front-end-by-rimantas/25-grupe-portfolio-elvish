@@ -5,22 +5,24 @@
     background-position: center;
 }
 .numbers-bg > .container {
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 45px;
     padding-bottom: 50px;
 }
 .numbers {
+    border: 1px dashed #fff;
     color: #fff;
     text-align: center;
-    border: 1px dashed #fff;
-    padding: 24px;
+    padding: 1.5rem;
     margin-top: 1rem;
-    width: 205px;
 }
 .numbers > .num-icon {
     line-height: 45px;
     font-size: 40px;
 }
 .numbers > h1 {
+    text-align: center;
     font-size: 48px;
     color: #fff;
 }
