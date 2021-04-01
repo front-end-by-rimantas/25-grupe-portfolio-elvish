@@ -1,10 +1,15 @@
 .container > .row > .services_item > .paragraph {
     color:  #6c757d;
+    margin-bottom: 0px;
 }
 
 .container > .row > .services_item {
     text-align: center;
-    border: 1px dotted #e7e7e7;
+    border: 1px dotted  #e7e7e7;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 14px;
+    
 }
 
 .container > .row > .services_item > .title {
@@ -14,5 +19,5 @@
 
 .container > .row > .services_item > .serv-icon {
     font-size: 30px;
-    padding: 1.8rem;
+    padding: 17px;
 }
