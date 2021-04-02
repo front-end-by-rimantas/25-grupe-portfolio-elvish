@@ -45,7 +45,10 @@
 /* great people */
 
 /* subscribe */
-
+.subscribe-form > input[type=button]{
+    padding: 10px 30px;
+    font-size: 18px;
+}
 /* our blog */
 
 /* get in touch */

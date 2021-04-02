@@ -15,6 +15,7 @@
 }
 .subscribe-form > input[type=button]{
     position: absolute;
-    right: 30px;
-    top:15px;
+    right: 5px;
+    border-radius: 25px;
+    top: 4px;
 }
