@@ -2,6 +2,7 @@
     background-image: url(../../img/hireMeBackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     position: relative;
     padding: 80px 0;
 }
@@ -29,24 +30,4 @@
     color: white;
     font-size: 50px;
     font-weight: 400;
-}
-.hire-me > button {
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: capitalize;
-    background: transparent;
-    padding: 12px 30px;
-    border-style: solid;
-    border-radius: 4px;
-    border-color: white;
-    border-width: 2px;
-    outline: none;
-}
-.hire-me > button:hover {
-    color: #000;
-    background-color: white;
-    transition: all 0.8s;
-    cursor: pointer;
-    outline: none;
 }
