@@ -1,3 +1,59 @@
 .git_text {
     text-align: center;
 }
+.btn_align {
+    float: right;
+    margin-top: 40px;
+}
+form { 
+    display: inline-block;
+    width: 100%;
+}
+form> .form-row {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+form> .form-row:last-of-type {
+    margin-bottom: 0;
+}
+form> .form-row> label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+form> .form-row> input {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+form> .form-row> button {
+        float: left;
+        padding: 10px;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 18px;
+        font-weight: 600;   /* bold: 700, normal: 400 */
+        line-height: 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #015cda;
+        /* background-color: red; */
+        color: #fff;
+        text-transform: capitalize;
+        cursor: pointer;
+}
+form> .form-row> span {
+        float: left;
+        padding: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+        line-height: 20px;
+}
