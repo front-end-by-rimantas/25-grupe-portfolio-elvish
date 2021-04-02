@@ -17,6 +17,7 @@
 
 // FUNKCIJU PANAUDOJIMAS
 // header
+import transitions from './components/headerFunction.js';
 // hero
 // about me
 // our services
