@@ -1,6 +1,7 @@
 // IMPORT
 // header
 // hero
+import {scrollDown} from './components/scroll-down.js'
 // about me
 // our services
 // numbers
