@@ -1,9 +1,11 @@
-function scrollDown() {
-    // var position = document.getElementById('about');
-    // window.scrollTo(0,document.body.position);
+document.getElementById("btn-sdown").addEventListener("click", scrollDown);
 
-    document.getElementById('about').scrollIntoView();
-    alert('works')
+function scrollDown() {
+    var abt = document.getElementById('About');
+    abt.scrollIntoView();
+
+    // document.getElementById('About').scrollIntoView(true);
+    alert('works');
 }
 
 export {scrollDown}
