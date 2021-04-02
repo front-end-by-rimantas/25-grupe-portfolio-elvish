@@ -11,7 +11,7 @@
     padding: 16px 30px;
     border-radius: 30px;
     width: 100%;
-    
+    outline: none;
 }
 .subscribe-form > input[type=button]{
     position: absolute;
