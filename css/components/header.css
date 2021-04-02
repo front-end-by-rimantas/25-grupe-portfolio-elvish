@@ -78,7 +78,7 @@
     transition: opacity 0.3s;
 }
 .meniu-bar-selector-black::before {
-    display: inline-block;
+    display: none;
     opacity: 0;
     content: '';
     border: 1px solid #000;
@@ -92,10 +92,14 @@
     transform: translateX(-50%);
     transition: opacity 0.3s;
 }
-.meniu-bar-selector:hover::before, .meniu-bar-selector:focus::before {
+.meniu-bar-selector:hover::before, 
+.meniu-bar-selector:focus::before {
+    display: inline-block;
     opacity: 1;
 }
-.meniu-bar-selector-black:hover::before, .meniu-bar-selector-black:focus::before {
+.meniu-bar-selector-black:hover::before, 
+.meniu-bar-selector-black:focus::before {
+    display: inline-block;
     opacity: 1;
 }
 .meniu-bar-icon {
