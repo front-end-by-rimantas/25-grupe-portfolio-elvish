@@ -1,0 +1,22 @@
+.backToTopButton-hide {
+    display: inline-block;
+    opacity: 0; 
+    transition: opacity 1s;
+}
+.backToTopButton {
+    display: inline-block;
+    opacity: 1;
+    color: #fff;
+    font-size: 20px;
+    padding: 4px 8px 0px;
+    position: fixed;
+    right: 10px;
+    bottom: 8px;
+    transition: opacity 1s;
+}
+
+.backToTopButton:hover,
+.backToTopButton:focus,
+.backToTopButton:active {
+    color: white;
+}

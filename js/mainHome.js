@@ -31,3 +31,4 @@
 // get in touch
 // footer
 // back to top button
+import hideButton from './components/backToTopButton.js'
