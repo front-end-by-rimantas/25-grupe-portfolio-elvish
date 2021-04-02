@@ -63,7 +63,8 @@
 }
 
 .meniu-bar-selector::before {
-    display: none;
+    display: inline-block;
+    opacity: 0;
     content: '';
     border: 1px solid white;
     width: 4px;
@@ -74,9 +75,11 @@
     left: 50%;
     top: 120%;
     transform: translateX(-50%);
+    transition: opacity 0.3s;
 }
 .meniu-bar-selector-black::before {
-    display: none;
+    display: inline-block;
+    opacity: 0;
     content: '';
     border: 1px solid #000;
     width: 4px;
@@ -87,12 +90,13 @@
     left: 50%;
     top: 120%;
     transform: translateX(-50%);
+    transition: opacity 0.3s;
 }
-.meniu-bar-selector:hover::before {
-    display: inline-block;
+.meniu-bar-selector:hover::before, .meniu-bar-selector:focus::before {
+    opacity: 1;
 }
-.meniu-bar-selector-black:hover::before {
-    display: inline-block;
+.meniu-bar-selector-black:hover::before, .meniu-bar-selector-black:focus::before {
+    opacity: 1;
 }
 .meniu-bar-icon {
     color: white;
