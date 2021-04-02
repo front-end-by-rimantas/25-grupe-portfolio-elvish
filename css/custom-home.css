@@ -6,6 +6,7 @@
 /* 3rd party */
 @import './3rd-party/font-awesome.min.css';
 /* components */
+@import './components/a_Button.css';
 @import './components/about-me.css';
 @import './components/education.css';
 @import './components/blog.css';
