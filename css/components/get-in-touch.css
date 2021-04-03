@@ -30,6 +30,11 @@ form> .form-row {
     width: 100%;
     margin: 8px 0 16px;
 }
+form> .form-row:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 8px 0 0;
+}
 .form-row {
     --linehalf-gap: 8px;
     --linegap: calc(2 * var(--linehalf-gap));
@@ -62,4 +67,18 @@ form> .form-row> input {
     font-size: 1rem;
     line-height: 30px;
     border: 1px solid #ced4da;
+}
+
+
+.t_area {
+    display: inline-block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 30px;
+    border: 1px solid #ced4da;
+    overflow: auto;
+    resize: vertical;
+    min-height: 110px;
+    margin-bottom: 16px;
 }
