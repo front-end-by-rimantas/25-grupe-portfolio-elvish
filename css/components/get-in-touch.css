@@ -13,6 +13,7 @@
 }
 .line_margin {
     margin: 0 0 16px;
+    color: #6c757d;
 }
 .top_margin {
     margin: 24px 0 0;
@@ -22,6 +23,9 @@
 }
 .pt {
     padding: 24px 0 0;
+}
+.fa {
+    color: #6c757d;
 }
 
 
