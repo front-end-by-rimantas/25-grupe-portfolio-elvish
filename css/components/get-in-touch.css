@@ -8,7 +8,21 @@
     font-weight: bold;
     text-transform: capitalize;
 }
-
+.text_center {
+    text-align: center
+}
+.line_margin {
+    margin: 0 0 16px;
+}
+.top_margin {
+    margin: 24px 0 0;
+}
+.tmaw {
+    margin: 14px 0 0;
+}
+.pt {
+    padding: 24px 0 0;
+}
 
 form> .form-row {
     display: inline-block;
