@@ -4,6 +4,10 @@
 .btn_align {
     float: right;
 }
+.col_head {
+    font-weight: bold;
+    text-transform: capitalize;
+}
 
 
 form> .form-row {
@@ -16,10 +20,10 @@ form> .form-row {
     --linegap: calc(2 * var(--linehalf-gap));
     --linecol1: calc(100% / 2 - var(--linegap));
 }
-form> .sub-firstline-width {
+form> .firstline-sub-width {
     width: var(--linecol1);
 }
-form> .sub-firstline-lot {
+form> .firstline-sub-lot {
     float: right;
 }
 @media (max-width: 991px) {
