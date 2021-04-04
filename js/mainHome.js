@@ -17,6 +17,7 @@
 
 // FUNKCIJU PANAUDOJIMAS
 // header
+import transitions from './components/headerFunction.js';
 // hero
 // about me
 // our services
@@ -32,3 +33,4 @@
 // footer
 // back to top button
 import hideButton from './components/backToTopButton.js'
+//end
