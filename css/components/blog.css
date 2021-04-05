@@ -25,6 +25,10 @@
     color: black;
 }
 
+.blog_link_title:hover {
+    color: var(--color-grey-dark);
+}
+
 .blog_link_a {
     text-decoration: none;
     font-weight: bold;
@@ -34,17 +38,28 @@
     color: black;
 }
 
+.blog_link_a:hover {
+    color: var(--color-grey-dark);
+}
+
 .blog_link_text {
     text-decoration: none;
     font-weight: 700;
     color: black;
 }
 
+.blog_link_text:hover {
+    color: var(--color-grey-dark);
+}
+
 .blog_link_read_more {
     text-decoration: none;
     font-weight: 700;
     color: #6c757d;
-    
+}
+
+.blog_link_read_more:hover {
+    color: var(--color-grey);
 }
 
 
