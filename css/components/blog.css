@@ -22,7 +22,7 @@
     text-decoration: none;
     font-weight: 700;
     width: 100%;
-    color: black;
+    color: var(--color-main);
 }
 
 .blog_link_title:hover {
@@ -35,7 +35,7 @@
     width: 100%;
     display: inline-block;
     padding-top: 10px;
-    color: black;
+    color: var(--color-main);
 }
 
 .blog_link_a:hover {
@@ -45,7 +45,7 @@
 .blog_link_text {
     text-decoration: none;
     font-weight: 700;
-    color: black;
+    color: var(--color-main);
 }
 
 .blog_link_text:hover {
@@ -55,7 +55,7 @@
 .blog_link_read_more {
     text-decoration: none;
     font-weight: 700;
-    color: #6c757d;
+    color: var(--color-grey);
 }
 
 .blog_link_read_more:hover {
