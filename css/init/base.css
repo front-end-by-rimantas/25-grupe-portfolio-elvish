@@ -14,7 +14,8 @@
     margin-bottom: 8px;
 }
 .main_headings > span{
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .paragraph {
