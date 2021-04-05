@@ -1,20 +1,26 @@
+.row {
+    padding-bottom: 60px;
+}
 
 .blog_link_title {
-    font-size: 20px;
+    font-size: 29px;
     text-decoration: none;
     font-weight: 700;
+    width: 100%;
     color: black;
 }
 
 .blog_link_a {
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     font-weight: bold;
+    width: 100%;
+    display: inline-block;
     color: black;
 }
 
 .blog_link_text {
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     font-weight: 700;
     color: black;
@@ -34,7 +40,12 @@
 .blog_item {
     text-align: center;
     padding: 16px;
-    background-color: #FFFFFF;
+    background-color: rebeccapurple;
+}
+
+.blog_img {
+    border-radius: 5px;
+    width: 100%;
 }
 
 .services_item > .title {
