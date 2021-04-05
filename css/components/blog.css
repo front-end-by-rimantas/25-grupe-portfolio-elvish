@@ -1,21 +1,24 @@
 .row {
-    padding-bottom: 60px;
+    padding-bottom: 36px;
 }
 
 .blog_item {
     text-align: center;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 8px;
+    padding-bottom: 25px;
+    margin-bottom: 18px;
     background-color: #fff;
 }
 
 .blog_img {
     border-radius: 5px;
     width: 100%;
-    padding-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .blog_link_title {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     font-weight: 700;
     width: 100%;
@@ -23,24 +26,21 @@
 }
 
 .blog_link_a {
-    font-size: 18px;
     text-decoration: none;
     font-weight: bold;
     width: 100%;
     display: inline-block;
-    padding: 10px;
+    padding-top: 10px;
     color: black;
 }
 
 .blog_link_text {
-    font-size: 18px;
     text-decoration: none;
     font-weight: 700;
     color: black;
 }
 
 .blog_link_read_more {
-    font-size: 19px;
     text-decoration: none;
     font-weight: 700;
     color: #6c757d;
