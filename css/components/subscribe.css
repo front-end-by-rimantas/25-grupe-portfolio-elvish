@@ -1,0 +1,21 @@
+.subscribe-form{
+    margin-top: 60px;
+    position: relative;
+}
+
+.subscribe-form > input[type=email]{
+    background-color: #f1f1f1;
+    color: var(--color-grey);
+    border: none;
+    font-size: 18px;
+    padding: 16px 30px;
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+}
+.subscribe-form > input[type=button]{
+    position: absolute;
+    right: 5px;
+    border-radius: 25px;
+    top: 4px;
+}
