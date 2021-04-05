@@ -16,7 +16,10 @@
     color: #6c757d;
 }
 .top_margin {
-    margin: 24px 0 0;
+    margin: 18px 0 0;
+}
+.top_margin_fot {
+    margin: 10px 0 0;
 }
 .tmaw {
     margin: 14px 0 0;
