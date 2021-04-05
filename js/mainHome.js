@@ -7,6 +7,7 @@
 // education and experience
 // hire me
 // our work
+import addclass from './components/work/work-filter.js';
 // our client
 // great people
 // subscribe
