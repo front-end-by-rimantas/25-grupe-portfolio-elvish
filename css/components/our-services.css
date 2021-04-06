@@ -1,0 +1,21 @@
+.services_item > .paragraph {
+    color: var(--color-grey);
+    margin-bottom: 0px;
+}
+
+.services_item {
+    text-align: center;
+    border: 1px dotted var(--color-grey-light-border);
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 14px;
+}
+
+.services_item > .title {
+    font-size: 20px;
+}
+
+.serv-icon {
+    font-size: 30px;
+    padding: 17px;
+}
