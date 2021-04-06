@@ -33,3 +33,5 @@ import transitions from './components/headerFunction.js';
 // get in touch
 // footer
 // back to top button
+import hideButton from './components/backToTopButton.js'
+//end
