@@ -9,12 +9,26 @@
     padding-bottom: 25px;
     margin-bottom: 18px;
     background-color: #fff;
+    position: relative;
+}
+
+.blog-video > a {
+    width: 64px;
+    height: 64px;
+    font-size: 21px;
+    line-height: 66px;
+    border-radius: 60%;
+    text-decoration: none;
+    color: var(--color-main);
+    background-color: white;
+    position: absolute;
+    bottom: 61%;
+    right: 45%;
 }
 
 .blog-img {
     border-radius: 5px;
     width: 100%;
-    
     margin-bottom: 16px;
 }
 
