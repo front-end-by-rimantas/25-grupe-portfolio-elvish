@@ -18,6 +18,7 @@ import {scrollDown} from './components/scroll-down.js'
 
 // FUNKCIJU PANAUDOJIMAS
 // header
+import transitions from './components/headerFunction.js';
 // hero
 // about me
 // our services
@@ -32,3 +33,5 @@ import {scrollDown} from './components/scroll-down.js'
 // get in touch
 // footer
 // back to top button
+import hideButton from './components/backToTopButton.js'
+//end
