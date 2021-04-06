@@ -10,18 +10,15 @@
     border-color: white;
     border-width: 2px;
     outline: none;
+    transition: 0.8s;
 }
-.btn.btn-black {
+.btn-black {
     border-color: black;
     background-color: black;
 }
-.btn.btn-hover:hover {
+.btn:hover {
     color: #000;
     background-color: white;
-    transition: all 0.8s;
     cursor: pointer;
     outline: none;
 }
-.btn.btn-hover:not(:hover) {
-    transition: all 0.8s;
-    }
