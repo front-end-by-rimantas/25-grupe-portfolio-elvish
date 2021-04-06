@@ -14,6 +14,18 @@ But this is what we have so far : https://front-end-by-rimantas.github.io/25-gru
 
 Design [Elvish](http://themesboss.com/elvish/index_6.html)
 
+# Project features
+- Github pages
+- multi-page
+- localStorage
+- content rendering with JS
+- scroll event
+- lightbox
+- carousel
+- fontawesome icons
+- CSS animations
+- CSS import
+- JS import-export
 
 ## Authors:
 - [Irmantas](https://github.com/naciort)
