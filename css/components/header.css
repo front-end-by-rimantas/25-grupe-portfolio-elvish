@@ -1,68 +1,44 @@
-.headerBar {
-    padding: 10px;
-    position: fixed;
-    z-index: 10;
-    background: transparent;
-    transition-property: background;
-    transition-duration: 0.5s;
-}
-.headerBar-white {
-    background: white;    
-    padding: 10px;
-    position: fixed;
-    z-index: 1;
-    transition-property: background;
-    transition-duration: 0.5s;   
-    box-shadow: 0px 1px 10px grey;
-}
-
 .logo-img {
     height: 30px;
 }
-
 .meniu-nav {
     float: right;
     margin: 0 50px 0 0;
     padding: 4px;
 }
 
-.items {
+/* ****************************** TRANSPARENT HEADER **************************************** */
+
+.headerBar {
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
     background-color: transparent;
-    border: none;    
-    outline: none;    
+    transition: background-color 1s;
 }
-.meniu-bar-selector {
+.headerBar .logoWhite {
+    display: inline-block;
+}
+.headerBar .logoBlack {
+    display: none;
+}
+.headerBar .meniu-bar-selector {
     color: white;
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     padding: 0 14px;
     position: relative;
-    transition: color;
-    transition-duration: 0.5s;
+    transition: color 1s;
 }
-
-.meniu-bar-selector-black {
-    color: black;
-    font-size: 15px;
-    font-weight: 600;
+.headerBar .meniu-bar-icon {
+    color: white;
     text-decoration: none;
-    padding: 0 14px;
-    position: relative;
-    transition: color;
-    transition-duration: 0.5s;
-    outline: none;
+    padding: 0;
+    font-size: 26px;
+    line-height: 30px;
 }
-.meniu-bar-selector:hover, .meniu-bar-selector:focus, .meniu-bar-selector:active {
-    color: white; 
-    cursor: pointer; 
-}
-.meniu-bar-selector-black:hover, .meniu-bar-selector-black:focus, .meniu-bar-selector-black:active {
-    color: black; 
-    cursor: pointer; 
-}
-
-.meniu-bar-selector::before {
+.headerBar .meniu-bar-selector::before {
     display: inline-block;
     opacity: 0;
     content: '';
@@ -75,10 +51,44 @@
     left: 50%;
     top: 120%;
     transform: translateX(-50%);
-    transition: opacity 0.3s;
+    transition: opacity 0.5s;
 }
-.meniu-bar-selector-black::before {
+
+/* ****************************** WHITE HEADER **************************************** */
+
+.headerBar-white {
+    background-color: white;    
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    transition: background-color 1s; 
+    box-shadow: 0px 1px 10px grey;
+}
+.headerBar-white .logoBlack {
+    display: inline-block;
+}
+.headerBar-white .logoWhite {
     display: none;
+}
+.headerBar-white .meniu-bar-selector {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 14px;
+    position: relative;
+    transition: color 1s;
+    outline: none;
+}
+.headerBar-white .meniu-bar-icon-black {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    font-size: 26px;
+    line-height: 30px;
+}
+.headerBar-white .meniu-bar-selector::before {
+    display: inline-block;
     opacity: 0;
     content: '';
     border: 1px solid #000;
@@ -90,60 +100,30 @@
     left: 50%;
     top: 120%;
     transform: translateX(-50%);
-    transition: opacity 0.3s;
+    transition: opacity 0.5s;
 }
 .meniu-bar-selector:hover::before, 
 .meniu-bar-selector:focus::before {
     display: inline-block;
     opacity: 1;
 }
-.meniu-bar-selector-black:hover::before, 
-.meniu-bar-selector-black:focus::before {
-    display: inline-block;
-    opacity: 1;
-}
-.meniu-bar-icon {
-    color: white;
-    text-decoration: none;
-    padding: 0;
-    font-size: 26px;
-    line-height: 30px;
-}
-.meniu-bar-icon-black {
-    color: black;
-    text-decoration: none;
-    padding: 0;
-    font-size: 26px;
-    line-height: 30px;
-}
-@media (min-width: 768px) {
-    .logoBlack {
+
+@media (max-width: 768px) { 
+    .headerBar {
+        background-color: white;
+        box-shadow: 0px 1px 10px grey;
+        transition: background-color 1s;
+    }
+    .headerBar .logoWhite {
         display: none;
     }
-}
-@media (max-width: 768px) {
-    .logoWhite {
-        display: none;
-    }
-    .logoBlack {
+    .headerBar .logoBlack {
         display: inline-block;
     }
-    .meniu-nav {
+    .headerBar .meniu-nav {
         color: black;
     }
-    .meniu-nav:hover {
+    .headerBar .meniu-nav:hover {
         color: black;
     }
-    .headerBar {
-        background: white;
-        box-shadow: 0px 1px 10px grey;
-        transition-property: background;
-        transition-duration: 0.5s;
-    }
-}
-.logo-show {
-    display: inline-block;
-}
-.logo-hide {
-    display: none;
 }
