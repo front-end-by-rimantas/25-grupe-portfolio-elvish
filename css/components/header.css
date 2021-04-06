@@ -1,7 +1,7 @@
 .headerBar {
     padding: 10px;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     background: transparent;
     transition-property: background;
     transition-duration: 0.5s;

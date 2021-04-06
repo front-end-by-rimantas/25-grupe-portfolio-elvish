@@ -1,0 +1,52 @@
+#ourClients {
+    background-image: url(../../img/ourClientBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+.clientsReviewsBox {
+    color: white;
+    position: relative;
+}
+.ourClients > h2 {
+    color: white;
+}
+.ourClients > p {
+    color: white;
+}
+.userIcon {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.ourClientsReviews > h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.ourClientsReviews > h4 {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.ourClientsReviews > p {
+    font-size: 17px;
+    line-height: 30px;
+}
+.clientsReviewsBox .sliderLine .slider {
+    font-size: 2px;
+    border: 2px solid;
+    border-color: var(--color-grey);
+    background-color: var(--color-grey);
+    border-radius: 5px;
+    padding: 0 5px; 
+    margin: 5px;
+    transition: all 0.5s;
+}
+.clientsReviewsBox .sliderLine .slider:hover {
+    cursor: pointer;
+    border-color: white;
+    background-color: white;
+}
+.clientsReviewsBox .sliderLine .slider:active .slider:focus {
+    padding: 0 8px;
+}
