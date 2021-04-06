@@ -4,7 +4,7 @@
 }
 
 .hero-100 {
-    background-image: url(/img/home-bg.jpg);
+    background-image: url(../../img/home-bg.jpg);
     background-position: center center;
     background-size: cover;
     color: white;
@@ -149,5 +149,5 @@
     left: 0;
     background-size: 100% 100%;
     background-color: transparent;
-    background-image: url(/img/bottom-color.png);
+    background-image: url(../../img/bottom-color.png);
 }

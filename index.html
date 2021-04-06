@@ -8,6 +8,7 @@
     <title>Elvish</title>
     <link rel="stylesheet" href="./css/custom-home.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <script type="module" src="./js/mainHome.js" defer></script>
 </head>
 
 <body>
@@ -32,16 +33,16 @@
     <!-- HEADER END -->
     
     <!-- HERO START-->
-    <div class="hero-100 h-100vh">
+    <div class="hero-100 h-100vh" id="Home">
         <!-- <div class="background-overlay"></div>  -->
         <div class="container-table">
-            <div class="container center-content">
+            <div class="container-fluid center-content">
                 <div class="row just-centered col-12">
                     <h1>
                         hello & welcome
                     </h1>
                     <h2>I am
-                        <span>A developer</span>
+                        <span id="changingHeroText">A developer</span>
                     </h2>
                     <div class="hero-socials-list">
                         <a href="#" class="fa fa-facebook"></a>
@@ -54,7 +55,7 @@
                     
             </div>
             <div class="container scroll-down">
-                <a href="#about">
+                <a href="#" onclick="scrollDown()" id="btn-sdown">
                     <i class="fa fa-angle-down bounce" aria-hidden="true">
                     </i>
                 </a>
@@ -65,7 +66,7 @@
     <!-- HERO END-->
 
     <!-- ABOUT ME START-->
-    <div class="container" id="about">
+    <div class="container" id="About">
         <div class="row">
             <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 about_me_texts">
                 <h2 class="main_headings"><span>About</span> me</h2>

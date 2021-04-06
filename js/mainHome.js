@@ -1,6 +1,8 @@
 // IMPORT
 // header
 // hero
+import scrollDown from './components/scroll-down.js'
+import textChange from './components/textChange.js'
 // about me
 // our services
 // numbers
