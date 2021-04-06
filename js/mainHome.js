@@ -1,12 +1,15 @@
 // IMPORT
 // header
 // hero
+import scrollDown from './components/scroll-down.js'
+import textChange from './components/textChange.js'
 // about me
 // our services
 // numbers
 // education and experience
 // hire me
 // our work
+import filterSelection from './components/work/work-filter.js';
 // our client
 // great people
 // subscribe

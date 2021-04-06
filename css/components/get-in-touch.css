@@ -1,0 +1,91 @@
+.git_text {
+    text-align: center;
+}
+.btn_align {
+    float: right;
+}
+.col_head {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.text_center {
+    text-align: center
+}
+.line_margin {
+    margin: 0 0 16px;
+    color: #6c757d;
+}
+.top_margin {
+    margin: 18px 0 0;
+}
+.top_margin_fot {
+    margin: 10px 0 0;
+}
+.tmaw {
+    margin: 14px 0 0;
+}
+.pt {
+    padding: 24px 0 0;
+}
+.grey_icon {
+    color: #6c757d;
+}
+
+
+form> .form-row {
+    display: inline-block;
+    width: 100%;
+    margin: 8px 0 16px;
+}
+form> .form-row:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 8px 0 0;
+}
+.form-row {
+    --linehalf-gap: 8px;
+    --linegap: calc(2 * var(--linehalf-gap));
+    --linecol1: calc(100% / 2 - var(--linegap));
+}
+form> .firstline-sub-width {
+    width: var(--linecol1);
+}
+form> .firstline-sub-lot {
+    float: right;
+}
+@media (max-width: 991px) {
+    form> .lc-f {
+      width: 100%;
+    }
+}
+
+
+form> .form-row> label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-weight: bold;
+}
+form> .form-row> input {
+    display: inline-block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 30px;
+    border: 1px solid #ced4da;
+}
+
+
+.t_area {
+    display: inline-block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 30px;
+    border: 1px solid #ced4da;
+    overflow: auto;
+    resize: vertical;
+    min-height: 110px;
+    margin-bottom: 16px;
+}
