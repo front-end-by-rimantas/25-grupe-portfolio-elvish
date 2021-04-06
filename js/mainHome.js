@@ -9,6 +9,7 @@ import textChange from './components/textChange.js'
 // education and experience
 // hire me
 // our work
+import filterSelection from './components/work/work-filter.js';
 // our client
 // great people
 // subscribe
