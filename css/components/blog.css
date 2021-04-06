@@ -9,22 +9,27 @@
     padding-bottom: 25px;
     margin-bottom: 18px;
     background-color: #fff;
+}
+
+.blog-video {
     position: relative;
 }
 
-.blog-video > a {
-    width: 64px;
-    height: 64px;
-    font-size: 21px;
-    line-height: 66px;
-    border-radius: 60%;
+.blog-video > i {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 23px;
+    border-radius: 50%;
     text-decoration: none;
+    cursor: pointer;
     color: var(--color-main);
     background-color: #fff;
     position: absolute;
-    bottom: 66%;
-    right: 40%;
-    transform: translate(-50%, 50%);
+    top: 52%;
+    left: 52%;
+    margin-left: -40px;
+    margin-top: -40px;
 }
 
 .blog-img {
