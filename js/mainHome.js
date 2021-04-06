@@ -10,6 +10,8 @@
 // our client
 // great people
 // subscribe
+// scroll action
+import transitions from './components/scrollAction.js';
 // our blog
 // get in touch
 // footer
@@ -17,7 +19,6 @@
 
 // FUNKCIJU PANAUDOJIMAS
 // header
-import transitions from './components/headerFunction.js';
 // hero
 // about me
 // our services
@@ -32,5 +33,3 @@ import transitions from './components/headerFunction.js';
 // get in touch
 // footer
 // back to top button
-import hideButton from './components/backToTopButton.js'
-//end
