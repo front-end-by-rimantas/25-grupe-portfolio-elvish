@@ -1,11 +1,12 @@
-document.getElementById("btn-sdown").addEventListener("click", scrollDown);
+document.getElementById('btn-sdown').addEventListener('click', scrollDown)
 
 function scrollDown() {
-    var abt = document.getElementById('About');
-    abt.scrollIntoView();
+    const id = 'About';
+const yOffset = 0; 
+const element = document.getElementById(id);
+const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-    // document.getElementById('About').scrollIntoView(true);
-    alert('works');
+window.scrollTo({top: y, behavior: 'smooth'});
 }
 
-export {scrollDown}
+export default scrollDown
