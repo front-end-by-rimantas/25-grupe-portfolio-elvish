@@ -20,10 +20,11 @@
     border-radius: 60%;
     text-decoration: none;
     color: var(--color-main);
-    background-color: white;
+    background-color: #fff;
     position: absolute;
-    bottom: 61%;
-    right: 45%;
+    bottom: 66%;
+    right: 40%;
+    transform: translate(-50%, 50%);
 }
 
 .blog-img {
