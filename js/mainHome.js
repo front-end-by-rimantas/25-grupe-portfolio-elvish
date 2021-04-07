@@ -8,7 +8,9 @@ import {fillPorgress, skills} from './components/pogress/progress.js'
 import {skillsData} from './data/skillsData.js'
 
 // our services
-import { numbersData } from './components/numbers.js';
+// numbers
+import { numbersData } from './data/numbersData.js';
+import { numbers } from './components/numbers.js';
 // education and experience
 // hire me
 // our work
@@ -31,7 +33,8 @@ skills("#progressCol1","#progressCol2", skillsData);
 document.addEventListener("scroll", () => fillPorgress(skillsData));
 
 // our services
-console.log(numbersData);
+// numbers
+numbers('#numbers_block', numbersData);
 // education and experience
 // hire me
 // our work
