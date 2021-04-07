@@ -58,3 +58,4 @@ reviewsRender('#reviews', reviewsData)
 // footer
 footerRender('#footer-icons', footerData)
 // back to top button
+document.querySelector('.backToTopBtn').addEventListener('click', () => meniuScrollDown("Home"))
