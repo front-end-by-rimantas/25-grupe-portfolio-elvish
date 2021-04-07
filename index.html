@@ -8,23 +8,24 @@
     <title>Elvish</title>
     <link rel="stylesheet" href="./css/custom-home.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <script type="module" src="./js/mainHome.js" defer></script>
 </head>
 
 <body>
     <!-- HEADER START -->
     <header class="container-fluid headerBar">
         <div class="row">
-            <a class="col-2 ml-1 mainLogoWhite logoWhite"  href="./"><img class=" logo-img" src="./img/logo.png" alt="logo"></a>
-            <a class="col-2 ml-1 mainLogoBlack logoBlack" href="./"><img class=" logo-img" src="./img/logo-blakc.png" alt="logo"></a>
+            <a class="col-2 ml-1 logoWhite"  href="./"><img class=" logo-img" src="./img/logo.png" alt="logo"></a>
+            <a class="col-2 ml-1 logoBlack" href="./"><img class=" logo-img" src="./img/logo-blakc.png" alt="logo"></a>
             <nav class="hidden visible-lg meniu-nav">
-                <a class="items item1 meniu-bar-selector" href="#top">Home</a>
-                <a class="items item2 meniu-bar-selector" href="#about">About</a>
-                <a class="items item3 meniu-bar-selector" href="#">Services</a>
-                <a class="items item4 meniu-bar-selector" href="#education">Education</a>
-                <a class="items item5 meniu-bar-selector" href="#">Work</a>
-                <a class="items item6 meniu-bar-selector" href="#">Client</a>
-                <a class="items item7 meniu-bar-selector" href="#">Blog</a>
-                <a class="items item8 meniu-bar-selector" href="#">Contact</a>
+                <a class="meniu-bar-selector" href="#top">Home</a>
+                <a class="meniu-bar-selector" href="#about">About</a>
+                <a class="meniu-bar-selector" href="#">Services</a>
+                <a class="meniu-bar-selector" href="#education">Education</a>
+                <a class="meniu-bar-selector" href="#ourWork">Work</a>
+                <a class="meniu-bar-selector" href="#greatPeople">Client</a>
+                <a class="meniu-bar-selector" href="#">Blog</a>
+                <a class="meniu-bar-selector" href="#">Contact</a>
             </nav>
             <a class="hidden-lg meniu-bar-icon meniu-nav" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
             </div>
@@ -32,16 +33,16 @@
     <!-- HEADER END -->
     
     <!-- HERO START-->
-    <div class="hero-100 h-100vh">
+    <div class="hero-100 h-100vh" id="Home">
         <!-- <div class="background-overlay"></div>  -->
         <div class="container-table">
-            <div class="container center-content">
+            <div class="container-fluid center-content">
                 <div class="row just-centered col-12">
                     <h1>
                         hello & welcome
                     </h1>
                     <h2>I am
-                        <span>A developer</span>
+                        <span id="changingHeroText">A developer</span>
                     </h2>
                     <div class="hero-socials-list">
                         <a href="#" class="fa fa-facebook"></a>
@@ -54,7 +55,7 @@
                     
             </div>
             <div class="container scroll-down">
-                <a href="#about">
+                <a href="#" onclick="scrollDown()" id="btn-sdown">
                     <i class="fa fa-angle-down bounce" aria-hidden="true">
                     </i>
                 </a>
@@ -65,7 +66,7 @@
     <!-- HERO END-->
 
     <!-- ABOUT ME START-->
-    <div class="container" id="about">
+    <div class="container" id="About">
         <div class="row">
             <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 about_me_texts">
                 <h2 class="main_headings"><span>About</span> me</h2>
@@ -143,7 +144,7 @@
 
     <div class="container bg-grey">
 
-        <div class="row col">
+        <div class="row">
             <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 about_me_texts">
                 <h2 class="main_headings">Our
                 <span class="serve-span">Services</span></h2>           
@@ -153,23 +154,23 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="services_item col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <i class="serv-icon fa fa-desktop" aria-hidden="true"></i>
+        <div class="row row-services">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 services-item">
+                <i class="services-icon fa fa-desktop" aria-hidden="true"></i>
                 <h2 class="title">Graphic Design</h2>
                 <p class="paragraph">
                 The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
             </div>
 
-            <div class="services_item col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <i class="serv-icon fa fa-paint-brush" aria-hidden="true"></i>
-            <h2 class="title">Unlimited Color</h2>
-            <p class="paragraph">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 services-item">
+                <i class="services-icon fa fa-paint-brush" aria-hidden="true"></i>
+                <h2 class="title">Unlimited Color</h2>
+                <p class="paragraph">
                 The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
             </div>
 
-            <div class="services_item col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <i class="serv-icon fa fa-line-chart" aria-hidden="true"></i>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 services-item">
+                <i class="services-icon fa fa-line-chart" aria-hidden="true"></i>
                 <h2 class="title">Media Marketing</h2>
                 <p class="paragraph">
                 The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
@@ -177,22 +178,22 @@
         </div>  
 
         <div class="row">
-            <div class="services_item col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <i class="serv-icon fa fa-wifi" aria-hidden="true"></i>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 services-item">
+                <i class="services-icon fa fa-wifi" aria-hidden="true"></i>
                 <h2 class="title">Unlimited Wifi</h2>
                 <p class="paragraph">
                 The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
             </div>
             
-            <div class="services_item col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <i class="serv-icon fa fa-mobile" aria-hidden="true"></i>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 services-item">
+                <i class="services-icon fa fa-mobile" aria-hidden="true"></i>
                 <h2 class="title">Responsive Design</h2>
                 <p class="paragraph">
                 The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
             </div>
             
-            <div class="services_item col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <i class="serv-icon fa fa-pencil-square-o" aria-hidden="true"></i>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 services-item">
+                <i class="services-icon fa fa-pencil-square-o" aria-hidden="true"></i>
                 <h2 class="title">Esay to customize</h2>
                 <p class="paragraph">
                 The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
@@ -296,14 +297,14 @@
         <div class="container hire-me-details">
             <div class="row hire-me">
                 <h2>I am available for freelancer.</h2>
-                <button class="btn btn-hover">Hire me!</button>            
+                <button class="btn">Hire me!</button>            
             </div>
         </div>
     </div>
     <!-- HIRE ME END-->
 
     <!-- OUR WORK START-->
-    <div class="container our-work">
+    <div class="container our-work" id="ourWork">
         <div class="row center">
             <h2 class="col-12 col-sm-10 ml-sm-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3 main_headings">Our <span>work</span></h2>
             <div class="col-12 col-sm-10 ml-sm-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3 asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
@@ -311,36 +312,71 @@
         </div>
         <div class="row center">
             <div class="col-12 work-menu">
-                <div class="work-m-b"><div class="work-menu-button st-aft selected">All</div></div>
-                <div class="work-m-b"><div class="work-menu-button st-aft">Seo</div></div>
-                <div class="work-m-b"><div class="work-menu-button st-aft">Webdesign</div></div>
-                <div class="work-m-b"><div class="work-menu-button st-aft">Work</div></div>
-                <div class="work-m-b"><div class="work-menu-button">WordPress</div></div>
+                <div class="work-m-b"><div class="js-all-menu-btn work-menu-button st-aft selected">All</div></div>
+                <div class="work-m-b"><div class="js-seo-menu-btn work-menu-button st-aft" >Seo</div></div>
+                <div class="work-m-b"><div class="js-webdesign-menu-btn work-menu-button st-aft">Webdesign</div></div>
+                <div class="work-m-b"><div class="js-work-menu-btn work-menu-button st-aft">Work</div></div>
+                <div class="work-m-b"><div class="js-wordpress-menu-btn work-menu-button">WordPress</div></div>
             </div>
         </div>
         <div class="row img-row">
-            <img src="./img/work/1.jpg" alt="Notepad" class="col-12 col-lg-4 col-xxl- work-img">
-            <img src="./img/work/2.jpg" alt="Frame" class="col-12 col-lg-4 work-img">
-            <img src="./img/work/3.jpg" alt="Vinyl" class="col-12 col-lg-4 work-img">
-        </div>
-        <div class="row img-row">
-            <img src="./img/work/4.jpg" alt="Paper cup" class="col-12 col-lg-4 work-img">
-            <img src="./img/work/5.jpg" alt="Work book" class="col-12 col-lg-4 work-img">
-            <img src="./img/work/6.jpg" alt="Note book" class="col-12 col-lg-4 work-img">
+            <img src="./img/work/1.jpg" alt="Notepad" class="col-12 col-lg-4 col-xxl- work-img webdesign wordpress">
+            <img src="./img/work/2.jpg" alt="Frame" class="col-12 col-lg-4 work-img seo webdesign">
+            <img src="./img/work/3.jpg" alt="Vinyl" class="col-12 col-lg-4 work-img workImg">
+            <img src="./img/work/4.jpg" alt="Paper cup" class="col-12 col-lg-4 work-img seo webdesign">
+            <img src="./img/work/5.jpg" alt="Work book" class="col-12 col-lg-4 work-img seo workImg">
+            <img src="./img/work/6.jpg" alt="Note book" class="col-12 col-lg-4 work-img wordpress">
         </div>
     </div>
     <!-- OUR WORK END-->
 
-    <!-- OUR CLIENT START-->
-    <div class="container bg-img">
-        <div class="row">
-            CONTENT
+    <!-- OUR CLIENT START-->  
+    <div class="container" id="ourClients">
+        <div class="background-overlay"></div>
+        <div class="container clientsReviewsBox">
+            <div class="row center">            
+                <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3 ourClients">
+                    <h2 class="main_headings">Our <span>Client</span></h2>
+                    <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
+                    <p class="paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+            </div>            
+            <div class="row center reviewLine">
+                <div class="col-12 col-md-8 ml-md-2 reviewBox">
+                    <div class="ourClientsReviews" id="comment1">
+                        <i class="fa fa-user-circle-o userIcon" aria-hidden="true"></i>
+                        <h3>Kirk MacFall</h3>
+                        <h4>Google</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, illum necessitatibus, quisquam ipsam culpa non quas aut quidem ratione alias officiis modi adipisci minima soluta provident tempore delectus reiciendis totam.</p>
+                    </div>
+                    <div class="ourClientsReviews" id="comment2">
+                        <i class="fa fa-user-circle-o userIcon" aria-hidden="true"></i>
+                        <h3>Edward Evans</h3>
+                        <h4>Google</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, illum necessitatibus, quisquam ipsam culpa non quas aut quidem ratione alias officiis modi adipisci minima soluta provident tempore delectus reiciendis totam.</p>
+                    </div>
+                    <div class="ourClientsReviews" id="comment3">
+                        <i class="fa fa-user-circle-o userIcon" aria-hidden="true"></i>
+                        <h3>Antonio Hernandez</h3>
+                        <h4>Google</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, illum necessitatibus, quisquam ipsam culpa non quas aut quidem ratione alias officiis modi adipisci minima soluta provident tempore delectus reiciendis totam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row center sliderLine">
+                <div class="col-12 col-md-8 ml-md-2">
+                    <span class="slider"></span>
+                    <span class="slider"></span>
+                    <span class="slider"></span>
+                </div>
+            </div>
         </div>
     </div>
+    
     <!-- OUR CLIENT END-->
 
     <!-- GREAT PEOPLE START-->
-    <div class="container bg-grey">
+    <div class="container bg-grey" id="greatPeople">
         <div class="row great-people">
             <div class="col-12 col-sm-10 ml-sm-1 col-md-8 ml-md-2 col-lg-6 ml-lg-3 great-people"> 
                 <h2 class="main_headings">Trusted by <span>great people</span></h2>
@@ -361,7 +397,7 @@
     <!-- GREAT PEOPLE END-->
 
     <!-- SUBSCRIBE START-->
-    <div class="container">
+    <div class="container" id="subscribe">
         <div class="row center">
             <h2 class="col-12 main_headings"><span>Subscribe <span style="text-transform: lowercase; font-weight: 500;">to</span></span> newsletter</h2>
             <div class="col-12 asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
@@ -380,52 +416,46 @@
 
         <div class="row">
             <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 about_me_texts">
-                <h2 class="main_headings">Our
-                <span class="blog-span">Blog</span></h2>           
-                <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
-                <p class="paragraph">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <h2 class="main_headings">Our
+                    <span class="blog-span">Blog</span></h2>           
+                    <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
+                    <p class="paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 col-lg-4">
-                <div class="blog_item">
-                    <img class="blog_img" src="./img/blog/blog-1.jpg" alt="blog1">
-                    <a class="blog_link_title" href="#">There are many variations</a>
-                    <a class="blog_link_a" href="#">Lifestyle</a>
+        <div class="row row-blog">
+            <div class="col-12 col-lg-4 blog-item">
+                    <img src="./img/blog/blog-1.jpg" alt="blog1" class="blog-img">
+                    <a href="#" class="blog-link-title">There are many variations</a>
+                    <a href="#" class="blog-link-a">Lifestyle</a>
                     <p class="paragraph">13 February 2018
-                    <a class="blog_link_text" href="#"> By Envato</a></p>
-                    <p class="paragraph">
-                    Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
-                    <a class="blog_link_read_more" href="#">Read More...</a>
-                </div>
+                    <a href="#" class="blog-link-text"> By Envato</a></p>
+                    <p class="paragraph">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
+                    <a href="#" class="blog-link-read-more">Read More...</a>
             </div>
          
-            <div class="col-12 col-lg-4">
-                <div class="blog_item">
-                    <img class="blog_img" src="./img/blog/blog-2.jpg" alt="blog2">
-                    <a class="blog_link_title" href="#">Contrary to popular belief</a>
-                    <a class="blog_link_a" href="#">Travel</a>
+            <div class="col-12 col-lg-4 blog-item">
+                 <div class="blog-video">
+                        <img src="./img/blog/blog-2.jpg" alt="blog2" class="blog-img">
+                        <a href="#" class="blog-video"></a>
+                        <i class="fa fa-play"></i>
+                 </div>
+                    <a href="#" class="blog-link-title">Contrary to popular belief</a>
+                    <a href="#" class="blog-link-a">Travel</a>
                     <p class="paragraph">13 February 2018
-                    <a class="blog_link_text" href="#"> By Envato</a></p>
-                    <p class="paragraph">
-                    Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
-                    <a class="blog_link_read_more" href="#">Read More...</a>
-                </div>
+                    <a href="#" class="blog-link-text"> By Envato</a></p>
+                    <p class="paragraph">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
+                    <a href="#" class="blog-link-read-more">Read More...</a>
             </div>
 
-            <div class="col-12 col-lg-4">
-                <div class="blog_item">
-                    <img class="blog_img" src="./img/blog/blog-3.jpg" alt="blog3">
-                    <a class="blog_link_title" href="#">Lorem ipsum is not simply</a>
-                    <a class="blog_link_a" href="#">Food &amp; Drinks</a>
+            <div class="col-12 col-lg-4 blog-item">
+                    <img src="./img/blog/blog-3.jpg" alt="blog3" class="blog-img">
+                    <a href="#" class="blog-link-title">Lorem ipsum is not simply</a>
+                    <a href="#" class="blog-link-a">Food &amp; Drinks</a>
                     <p class="paragraph">13 February 2018
-                    <a class="blog_link_text" href="#"> By Envato</a></p>
-                    <p class="paragraph">
-                    Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
-                    <a class="blog_link_read_more" href="#">Read More...</a>
-                </div>
+                    <a href="#" class="blog-link-text"> By Envato</a></p>
+                    <p class="paragraph">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
+                    <a href="#" class="blog-link-read-more">Read More...</a>
             </div> 
         </div>
     </div>
@@ -506,7 +536,7 @@
     <!-- FOOTER END -->
 
     <!-- BACK TO TOP BUTTON START-->           
-    <a href="#" class="btn btn-black backToTopButton-hide"><i class="fa fa-angle-up" aria-hidden="true"></i></a>      
+    <a id="backToTop" href="#" class="btn btn-black backToTopButton-hide"><i class="fa fa-angle-up" aria-hidden="true"></i></a>      
     <!-- BACK TO TOP BUTTON END-->
 
     <script src="./js/mainHome.js" type="module" defer></script>
