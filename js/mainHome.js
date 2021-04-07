@@ -33,7 +33,7 @@ import { footerRender } from './components/footer/footerRender.js';
 // FUNKCIJU PANAUDOJIMAS
 // header
 meniuRender('#meniuBlock', meniuData);
-document.querySelector('.meniubtn').addEventListener('click', () => meniuScrollDown("home"))
+document.querySelector('.meniubtn').addEventListener('click', () => meniuScrollDown("Home"))
 document.querySelector('.aboutbtn').addEventListener('click', () => meniuScrollDown("about"))
 document.querySelector('.servicesbtn').addEventListener('click', () => meniuScrollDown("services"))
 document.querySelector('.educationbtn').addEventListener('click', () => meniuScrollDown("education"))
