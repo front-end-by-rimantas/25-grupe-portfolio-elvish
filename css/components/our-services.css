@@ -1,9 +1,12 @@
-.services_item > .paragraph {
-    color: var(--color-grey);
-    margin-bottom: 0px;
+.row-services {
+    padding-top: 32px;
 }
 
-.services_item {
+.services-text {
+    text-align: center;
+}
+
+.services-item {
     text-align: center;
     border: 1px dotted var(--color-grey-light-border);
     border-radius: 5px;
@@ -11,11 +14,17 @@
     padding: 14px;
 }
 
-.services_item > .title {
-    font-size: 20px;
-}
-
-.serv-icon {
+.services-icon {
     font-size: 30px;
     padding: 17px;
 }
+
+.services-item > .title {
+    font-size: 20px;
+}
+
+.services-item > .paragraph {
+    color: var(--color-grey);
+    margin-bottom: 0px;
+}
+
