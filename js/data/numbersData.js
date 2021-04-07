@@ -1,9 +1,9 @@
 const numbersData = {
-    imgPath: '../../img/',
+    imgPath: '',
     maxCount: 3,
     list: [
         {
-            img: 'numbers-bg.jpg',
+            img: "*laiktodis*",
             title: 'Working Hours',
             description: '654',
             link: '#',
@@ -11,7 +11,7 @@ const numbersData = {
         },
 
         {
-            img: 'numbers-bg.jpg',
+            img: '*dovana*',
             title: 'Completed Projects',
             description: '6400',
             link: '#',
@@ -19,7 +19,7 @@ const numbersData = {
         },
 
         {
-            img: 'numbers-bg.jpg',
+            img: '*zmogus*',
             title: 'No. of Clients',
             description: '2389',
             link: '#',
@@ -27,7 +27,7 @@ const numbersData = {
         },
 
         {
-            img: 'numbers-bg.jpg',
+            img: '*zmones*',
             title: 'Team Members',
             description: '653',
             link: '#',

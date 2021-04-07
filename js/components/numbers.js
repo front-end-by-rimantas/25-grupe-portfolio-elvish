@@ -6,13 +6,16 @@ function numbers(selector, data) {
     // logic
     const DOM = document.querySelector(selector);
     
-    const numbersArray = data.list;
-    const imgPath = data.imgPath;
+    // const list = data.list;
+    // const imgPath = data.imgPath;
+    // const maxCount = data.maxCount;
+
+    const { list, imgPath, maxCount } = data;
 
     let HTML = '';
 
-    for (let i = 0; i < numbersArray.length; i++) {
-        const number = numbersArray[i];
+    for (let i = 0; i < list.length; i++) {
+        const number = list[i];
         console.log(number);
 
         if (!number.active) {
@@ -21,7 +24,7 @@ function numbers(selector, data) {
 
         HTML += `<div class="col-12 col-lg-3">
                         <div class="numbers">
-                            <i class="num-icon fa fa-history" aria-hidden="true"></i>
+                            <i>${number.img}</i>
                             <h1>${number.description}</h1>
                             <p>${number.title}</p>
                         </div>
@@ -29,10 +32,6 @@ function numbers(selector, data) {
         
     }
 
-
-
-
-    
     
     // post logic validation
 
