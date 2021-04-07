@@ -17,10 +17,16 @@
     font-size: 14px;
     padding: 7px 16px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .work-img{
-    margin-bottom: 10px;
+    display: none;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
 }
 .selected, .work-menu-button:hover{
     background-color: var(--color-main);
@@ -46,4 +52,8 @@
     .img-row>img:last-of-type{
         margin-bottom: 10px;
     }
+    }
+
+    .visible{
+        visibility: visible;
     }

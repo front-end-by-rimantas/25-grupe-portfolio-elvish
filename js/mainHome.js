@@ -12,9 +12,12 @@ import {skillsData} from './data/skillsData.js'
 // education and experience
 // hire me
 // our work
+import filterSelection from './components/work/work-filter.js';
 // our client
 // great people
 // subscribe
+// scroll action
+import transitions from './components/scrollAction.js';
 // our blog
 // get in touch
 // footer
@@ -22,7 +25,6 @@ import {skillsData} from './data/skillsData.js'
 
 // FUNKCIJU PANAUDOJIMAS
 // header
-import transitions from './components/headerFunction.js';
 // hero
 // about me
 skills("#progressCol1","#progressCol2", skillsData);
@@ -40,5 +42,3 @@ document.addEventListener("scroll", () => fillPorgress(skillsData));
 // get in touch
 // footer
 // back to top button
-import hideButton from './components/backToTopButton.js'
-//end
