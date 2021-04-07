@@ -5,7 +5,7 @@ import scrollDown from './components/scroll-down.js'
 import textChange from './components/textChange.js'
 // about me
 // our services
-// numbers
+import { numbersData } from './components/numbers.js';
 // education and experience
 // hire me
 // our work
@@ -25,7 +25,7 @@ import transitions from './components/scrollAction.js';
 // hero
 // about me
 // our services
-// numbers
+console.log(numbersData);
 // education and experience
 // hire me
 // our work

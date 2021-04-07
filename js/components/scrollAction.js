@@ -14,4 +14,4 @@ window.onscroll = () => {
     }
     return;
 }
-export default headerBar
+export default 'headerbar'
