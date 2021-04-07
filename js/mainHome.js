@@ -5,6 +5,8 @@ import scrollDown from './components/scroll-down.js'
 import textChange from './components/textChange.js'
 // about me
 // our services
+import {ourServicesData} from './data/ourServicesData.js'
+import {ourServices} from './components/ourServices/ourServices.js'
 // numbers
 // education and experience
 // hire me
