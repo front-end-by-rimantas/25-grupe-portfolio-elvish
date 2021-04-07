@@ -4,6 +4,9 @@
 import scrollDown from './components/scroll-down.js'
 import textChange from './components/textChange.js'
 // about me
+import {fillPorgress, skills} from './components/pogress/progress.js'
+import {skillsData} from './data/skillsData.js'
+
 // our services
 // numbers
 // education and experience
@@ -24,6 +27,9 @@ import transitions from './components/scrollAction.js';
 // header
 // hero
 // about me
+skills("#progressCol1","#progressCol2", skillsData);
+document.addEventListener("scroll", () => fillPorgress(skillsData));
+
 // our services
 // numbers
 // education and experience
