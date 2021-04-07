@@ -3,13 +3,15 @@ function skills(selector1,selector2, data) {
 
     // logic
     const DOM1 = document.querySelector(selector1);
+    const DOM2 = document.querySelector(selector2);
     const { name, percent } = data;
 
     let HTML1 = '';
+    let HTML2 = '';
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < data.length; i++) {
         const skill = data[i];
-
+        if(i<3){
         HTML1 += `<div class="progress_area">
             <div class="progress_text">${skill.name}</div>
             <div class="progress_percent">${skill.percent}</div>
@@ -17,30 +19,20 @@ function skills(selector1,selector2, data) {
             <div class="progress_inner" role="progressbar" style="width: ${skill.percent}"></div>
             </div>
          </div>`;
-    }
-
+        }
+        if(i>=3 )  {  
+        HTML2 += `<div class="progress_area">
+        <div class="progress_text">${skill.name}</div>
+        <div class="progress_percent">${skill.percent}</div>
+        <div class="progress_bar">
+        <div class="progress_inner" role="progressbar" style="width: ${skill.percent}"></div>
+        </div>
+        </div>`; 
+    }}
     // post logic validation
-
+    
     // result return
     DOM1.innerHTML = HTML1;
-    let HTML2 = '';
-    const DOM2 = document.querySelector(selector2);
-    for (let i = 3; i < 6; i++) {
-        const skill = data[i];
-
-        HTML2 += `<div class="progress_area">
-            <div class="progress_text">${skill.name}</div>
-            <div class="progress_percent">${skill.percent}</div>
-            <div class="progress_bar">
-            <div class="progress_inner" role="progressbar" style="width: ${skill.percent}"></div>
-            </div>
-         </div>`;
-         
-         
-    }
-    // post logic validation
-
-    // result return
     DOM2.innerHTML = HTML2;
 }
 
@@ -71,6 +63,10 @@ function checkVisible(elm) {
     var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
     return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
   }
+
+
+
+
 
 export {fillPorgress, skills}
 
