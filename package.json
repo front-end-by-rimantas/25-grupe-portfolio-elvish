@@ -14,7 +14,8 @@
     "live-server": "^1.2.1"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3"
+    "bootstrap": "^5.0.0-beta3",
+    "jquery": "^3.6.0"
   },
   "type": "module"
 }

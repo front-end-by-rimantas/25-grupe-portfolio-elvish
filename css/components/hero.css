@@ -8,6 +8,7 @@
     background-position: center center;
     background-size: cover;
     color: white;
+    overflow: hidden;
 }
 
 .container-table {
