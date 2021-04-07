@@ -1,7 +1,8 @@
 // IMPORT
 // header
-import { meniuData } from './data/headerMeniu.js';
+import { meniuData } from './data/headerMeniuData.js';
 import { meniuRender } from './components/header/meniuRender.js';
+import meniuScrollDown from './components/header/meniuScroll.js'
 // hero
 import scrollDown from './components/scroll-down.js'
 import textChange from './components/textChange.js'
@@ -31,7 +32,15 @@ import { footerRender } from './components/footer/footerRender.js';
 
 // FUNKCIJU PANAUDOJIMAS
 // header
-meniuRender('#meniuBlock', meniuData)
+meniuRender('#meniuBlock', meniuData);
+document.querySelector('.meniubtn').addEventListener('click', () => meniuScrollDown("home"))
+document.querySelector('.aboutbtn').addEventListener('click', () => meniuScrollDown("about"))
+document.querySelector('.servicesbtn').addEventListener('click', () => meniuScrollDown("services"))
+document.querySelector('.educationbtn').addEventListener('click', () => meniuScrollDown("education"))
+document.querySelector('.workbtn').addEventListener('click', () => meniuScrollDown("ourWork"))
+document.querySelector('.clientbtn').addEventListener('click', () => meniuScrollDown("ourClients"))
+document.querySelector('.blogbtn').addEventListener('click', () => meniuScrollDown("blog"))
+document.querySelector('.contactbtn').addEventListener('click', () => meniuScrollDown("contact"))
 // hero
 // about me
 // our services
