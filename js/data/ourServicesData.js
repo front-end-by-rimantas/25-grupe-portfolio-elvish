@@ -22,8 +22,8 @@ const ourServicesData = {
         {
              icon: "fa fa-wifi",
              title: "Unlimited Wifi",
-             description: "Some demo text",
-             active: false
+             description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
+             active: true
         },
         {
              icon: "fa fa-mobile",
