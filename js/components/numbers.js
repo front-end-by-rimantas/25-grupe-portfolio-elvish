@@ -36,7 +36,7 @@ function numbers(selector, data) {
         generatedNumbersCount++;
         HTML += `<div class="col-12 col-lg-3">
                         <div class="numbers">
-                            <i>${number.img}</i>
+                            <i class="num-icon fa fa-${number.icon}" aria-hidden="true"></i>
                             <h1>${number.description}</h1>
                             <p>${number.title}</p>
                         </div>

@@ -1,9 +1,9 @@
 const numbersData = {
-    imgPath: '',
+    
     maxCount: 4,
     list: [
         {
-            img: "*laiktodis*",
+            icon: 'history',
             title: 'Working Hours',
             description: '654',
             link: '#',
@@ -11,7 +11,7 @@ const numbersData = {
         },
 
         {
-            img: '*dovana*',
+            icon: 'gift',
             title: 'Completed Projects',
             description: '6400',
             link: '#',
@@ -19,7 +19,7 @@ const numbersData = {
         },
 
         {
-            img: '*zmogus*',
+            icon: 'user-circle-o',
             title: 'No. of Clients',
             description: '2389',
             link: '#',
@@ -27,14 +27,14 @@ const numbersData = {
         },
 
         {
-            img: '*zmones*',
+            icon: 'users',
             title: 'Team Members',
             description: '653',
             link: '#',
             active: true
         },
         {
-            img: '*zmogus*',
+            icon: 'zmogus',
             title: 'No. of Clients',
             description: '2389',
             link: '#',
@@ -42,7 +42,7 @@ const numbersData = {
         },
 
         {
-            img: '*zmones*',
+            icon: 'zmones',
             title: 'Team Members',
             description: '653',
             link: '#',

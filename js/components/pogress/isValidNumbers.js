@@ -5,8 +5,8 @@ function isValidNumbers(selector, data) {
     }
     if (typeof data !== 'object' ||
         Array.isArray(data) ||
-        //!data.imgPath ||
-        typeof data.imgPath !== 'string' ||
+        // !data.imgPath ||
+        // typeof data.imgPath !== 'string' ||
         // data.imgPath === '' ||
         !data.list ||
         !Array.isArray(data.list) ||
@@ -18,8 +18,8 @@ function isValidNumbers(selector, data) {
     if (data.maxCount) {
         if (typeof data.maxCount !== 'number' ||
             !isFinite(data.maxCount) ||
-            data.maxCoun < 0 // ||
-            // data.maxCoun % 1 !== 0
+            data.maxCount < 0 ||
+            data.maxCount % 1 !== 0
         ) {
             return false;
         }
