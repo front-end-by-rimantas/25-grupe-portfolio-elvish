@@ -27,6 +27,7 @@ import transitions from './components/scrollAction.js';
 // hero
 // about me
 // our services
+ourServices('#our_services', ourServicesData);
 // numbers
 // education and experience
 // hire me
