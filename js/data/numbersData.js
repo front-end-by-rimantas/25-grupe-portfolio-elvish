@@ -1,6 +1,6 @@
 const numbersData = {
     imgPath: '',
-    maxCount: 3,
+    maxCount: 4,
     list: [
         {
             img: "*laiktodis*",
@@ -24,6 +24,21 @@ const numbersData = {
             description: '2389',
             link: '#',
             active: true
+        },
+
+        {
+            img: '*zmones*',
+            title: 'Team Members',
+            description: '653',
+            link: '#',
+            active: true
+        },
+        {
+            img: '*zmogus*',
+            title: 'No. of Clients',
+            description: '2389',
+            link: '#',
+            active: false
         },
 
         {

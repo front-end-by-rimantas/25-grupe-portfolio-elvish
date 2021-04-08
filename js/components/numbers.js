@@ -13,6 +13,7 @@ function numbers(selector, data) {
     const { list, imgPath, maxCount } = data;
 
     let HTML = '';
+    let generatedNumbersCount = 0;
 
     for (let i = 0; i < list.length; i++) {
         const number = list[i];
@@ -21,7 +22,12 @@ function numbers(selector, data) {
         if (!number.active) {
             continue;
         }
+        
+        if (generatedNumbersCount === maxCount) {
+            break;
+        }
 
+        generatedNumbersCount++;
         HTML += `<div class="col-12 col-lg-3">
                         <div class="numbers">
                             <i>${number.img}</i>
