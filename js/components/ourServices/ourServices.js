@@ -14,6 +14,8 @@ function ourServices(selector, data) {
     for (let i = 0; i < list.length; i++) {
         const ourService = list[i];
 
+        // service item validation
+
         if (!ourService.active) {
             continue;
         }
@@ -30,6 +32,10 @@ function ourServices(selector, data) {
                   </div>`;
 
     }
+
+    // post logic validation
+
+    // npm run devreturn rezult
 
     DOM.innerHTML = HTML;
 }
