@@ -52,7 +52,7 @@ skills("#progressCol1","#progressCol2", skillsData);
 document.addEventListener("scroll", () => fillPorgress(skillsData));
 
 // our services
-ourServices('#our_services', ourServicesData);
+ourServices('#our_services_block', ourServicesData);
 // numbers
 // education and experience
 educationRender('#educationExperience', educationData, experienceData)
