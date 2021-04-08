@@ -1,10 +1,16 @@
-
+import { isValidNumbers } from './pogress/isValidNumbers.js';
 
 function numbers(selector, data) {
     // input validation
-
+    if (!isValidNumbers(selector, data)) {
+        return false;
+    }
     // logic
     const DOM = document.querySelector(selector);
+    if (!DOM) {
+        console.error('Pagal pateikta selektoriu nerastas norimas elementas'); 
+        return false
+    }
     
     // const list = data.list;
     // const imgPath = data.imgPath;
@@ -17,7 +23,7 @@ function numbers(selector, data) {
 
     for (let i = 0; i < list.length; i++) {
         const number = list[i];
-        console.log(number);
+        // console.log(number);
 
         if (!number.active) {
             continue;
