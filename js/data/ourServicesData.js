@@ -1,5 +1,5 @@
 const ourServicesData = {
-    maxCount: 3,
+    maxCount: 6,
     list: [
         {
              icon: "desktop",
@@ -22,7 +22,7 @@ const ourServicesData = {
         {
              icon: "wifi",
              title: "Unlimited Wifi",
-             description: "Some demo text",
+             description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
              active: true
         },
         {
