@@ -1,41 +1,36 @@
 const ourServicesData = {
-    maxCount: 6,
+    maxCount: 3,
     list: [
-        {
-             icon: "desktop",
-             title: "Graphic Design",
-             description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
-             active: true
-        },
+        
         {
              icon: "paint-brush",
              title: "Unlimited Color",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
-             active: true
+             active: false
         },
         {
              icon: "line-chart",
              title: "Media Marketing",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
-             active: true
+             active: false
         },
         {
              icon: "wifi",
              title: "Unlimited Wifi",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
-             active: true
+             active: false
         },
         {
              icon: "mobile",
              title: "Responsive Design",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
-             active: true
+             active: false
         },
         {
              icon: "pencil-square-o",
              title: "Esay to customize",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
-             active: true
+             active: false
         },
     ]
 }

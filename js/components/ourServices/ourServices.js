@@ -1,5 +1,5 @@
 import {isValidOurServices} from './isValidOurServices.js';
-import {isValidServicesItem} from './isValidOurServicesItem.js';
+// import {isValidourServicesItem} from './isValidOurServicesItem.js';
 
 function ourServices(selector, data) {
 
@@ -21,7 +21,10 @@ function ourServices(selector, data) {
     for (let i = 0; i < list.length; i++) {
         const ourService = list[i];
 
-        
+        // if (!isValidourServicesItem(ourServices) ||
+        //     !ourServices.active) {
+        //         continue;
+        //     }
 
         if (generatedOurServicesCount === maxCount) {
             break;
