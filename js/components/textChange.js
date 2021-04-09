@@ -2,7 +2,9 @@ const example = ['Elvish Walters.', 'A developer.', 'A designer.'];
 const div = document.getElementById('changingHeroText');
 let i = 0;
 
-setInterval(function() {
+function textChange() {};
+
+setInterval(function textChange() {
   div.innerHTML = `<span>${example[i++ % example.length]}</span>`
 }, 8000)
 
