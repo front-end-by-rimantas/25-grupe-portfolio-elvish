@@ -51,6 +51,15 @@
     color: inherit;
 }
 
+#changingHeroText span {
+    animation: change_opacity 4s infinite alternate;
+  }
+  
+  @keyframes change_opacity {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+
 .cv-btn {
     display: inline-block;
     margin-top: 40px;
