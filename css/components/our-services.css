@@ -1,23 +1,30 @@
-.container > .row > .services_item > .paragraph {
-    color:  #6c757d;
-    margin-bottom: 0px;
+.row-services {
+    padding-top: 32px;
 }
 
-.container > .row > .services_item {
+.services-text {
     text-align: center;
-    border: 1px dotted  #e7e7e7;
+}
+
+.services-item {
+    text-align: center;
+    border: 1px dotted var(--color-grey-light-border);
     border-radius: 5px;
     margin-top: 1rem;
     padding: 14px;
-    
 }
 
-.container > .row > .services_item > .title {
-    font-size: 20px;
-    
-}
-
-.container > .row > .services_item > .serv-icon {
+.services-icon {
     font-size: 30px;
     padding: 17px;
 }
+
+.services-item > .title {
+    font-size: 20px;
+}
+
+.services-item > .paragraph {
+    color: var(--color-grey);
+    margin-bottom: 0px;
+}
+

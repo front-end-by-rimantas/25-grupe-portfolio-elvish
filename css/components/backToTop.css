@@ -19,4 +19,5 @@
 .backToTopButton:focus,
 .backToTopButton:active {
     color: white;
+    background-color: black;
 }
