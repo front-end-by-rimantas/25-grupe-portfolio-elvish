@@ -4,21 +4,26 @@
     gap: 35px 30px;
 }
 
-.our-services-list > .services-item > .services-icon {
+.our-services-list > .our-services-item > .services-icon {
     margin-bottom: 26px;
     font-size: 30px;
 }
 
-.our-services-list > .services-item {
+.our-services-list > .our-services-item {
     text-align: center;
     border: 1px dotted var(--color-grey-light-border);
     border-radius: 5px;
     padding: 25px;
 }
 
-.our-services-list > .services-item > .paragraph {
-    color: var(--color-grey);
+.our-services-list > .our-services-item > .title {
+    font-size: 21px;
+    padding-bottom: 7px;
+}
+
+.our-services-list > .our-services-item > .paragraph {
     margin-bottom: 0px;
+    color: var(--color-grey);
 }
 
 .our-services-list {
