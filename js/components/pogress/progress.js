@@ -62,7 +62,7 @@ function fillPorgress(data){
     if(scrolFunExec) return;
     scrolFunExec = true;
     const progArr = document.getElementsByClassName('progress_inner');
-    let element;
+    let element, num;
     for(let p = 0; p < progArr.length; p++){
         element = progArr[p];
         element.animate([
@@ -73,8 +73,9 @@ function fillPorgress(data){
             easing: "ease-in-out"
         }
         );
-        
         element.style.width = data[p].percent;
+        num = parseInt(data[p].percent);
+        counter(p, num);
     }
 }
 
@@ -84,6 +85,27 @@ function checkVisible(elm) {
     var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
     return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
   }
+
+// number counter
+function counter(i, targetNum){
+    let tick = 0;
+    let count = 0; 
+    const numberDOM = document.querySelectorAll('.progress_percent')[i];
+    const animationDuration = 1;
+    const animationFPS = 30;
+    const totalTickCount = animationFPS * animationDuration;
+
+    const timer = setInterval(() => {
+        count = Math.floor(tick / totalTickCount * targetNum);
+        tick++;
+        numberDOM.innerText = count + '%';
+        if (targetNum === count){
+            clearInterval(timer);
+        }
+    }, 1000 / animationFPS)
+
+
+}
 
 export {fillPorgress, skills}
 
