@@ -1,5 +1,5 @@
 import {isValidOurServices} from './isValidOurServices.js';
-
+import {isValidServicesItem} from './isValidOurServicesItem.js';
 
 function ourServices(selector, data) {
 

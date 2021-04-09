@@ -1,4 +1,5 @@
 function isValidOurServices(selector, data) {
+    
     if (typeof selector !== 'string' ||
         selector === '') {
         console.log('ERROR: blogas selectorius');
