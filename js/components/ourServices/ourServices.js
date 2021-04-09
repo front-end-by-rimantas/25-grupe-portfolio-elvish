@@ -1,7 +1,6 @@
 import {isValidOurServices} from './isValidOurServices.js';
 
 
-
 function ourServices(selector, data) {
 
     if (!isValidOurServices(selector, data)) {
