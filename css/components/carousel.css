@@ -21,18 +21,9 @@
     width: 100%;
     float: left;
 }
-.carousel .userIcon{
 
-}
-
-.carousel .sliderLine{
-
-}
-
-.carousel .slider {
-
-}
-
-.carousel .slider.sliderActive {
-
+.clientsReviewsBox .sliderLine .slider.sliderActive {
+    padding: 0 10px;
+    border-color: white;
+    background-color: white;
 }
