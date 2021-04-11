@@ -5,7 +5,7 @@ const ourServicesData = {
              icon: "desktop",
              title: "Graphic Design",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
-             active: false
+             active: true
         },
         {
              icon: "paint-brush",
