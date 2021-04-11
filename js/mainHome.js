@@ -11,6 +11,8 @@ import {fillPorgress, skills} from './components/pogress/progress.js'
 import {skillsData} from './data/skillsData.js'
 
 // our services
+import {ourServicesData} from './data/ourServicesData.js'
+import {ourServices} from './components/ourServices/ourServices.js'
 // numbers
 // education and experience
 import { educationData } from './data/educationData.js';
@@ -50,6 +52,7 @@ skills("#progressCol1","#progressCol2", skillsData);
 document.addEventListener("scroll", () => fillPorgress(skillsData));
 
 // our services
+ourServices('#our_services_block', ourServicesData);
 // numbers
 // education and experience
 educationRender('#educationExperience', educationData, experienceData)
