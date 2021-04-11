@@ -21,8 +21,8 @@ function ourServices(selector, data) {
     for (let i = 0; i < list.length; i++) {
         const ourService = list[i];
 
-        // if (!isValidourServicesItem(ourServices) ||
-        //     !ourServices.active) {
+        // if (!isValidourServicesItem(ourService) ||
+        //     !ourService.active) {
         //         continue;
         //     }
 
