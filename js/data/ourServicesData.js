@@ -33,7 +33,7 @@ const ourServicesData = {
         },
         {
              icon: "pencil-square-o",
-             title: "Esay to customize",
+             title: "Easy to customize",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
              active: true
         },
