@@ -1,9 +1,9 @@
 const ourBlogsData = {
-     imgPath: './img/blog',
+     imgPath: './img/blog/',
      maxCount: 2,
      list: [
         {
-             img: "./blog-1.jpg",
+             img: "blog-1.jpg",
              title_link: "There are many variations",
              theme_link: "Lifestyle",
              date: "13 February 2018",
@@ -13,7 +13,7 @@ const ourBlogsData = {
              active: true
         },
         {
-             img: "./blog-3.jpg",
+             img: "blog-3.jpg",
              title_link: "Lorem ipsum is not simply",
              theme_link: "Food &amp; Drinks",
              date: "13 February 2018",

@@ -1,24 +1,53 @@
 
 
+
 function ourBlogs(selector, data) {
 
     console.log(data);
 
+    // if (!isValidOurBlogs(selector, data)) {
+    //     return false;
+    // }
+
     const DOM = document.querySelector(selector);
+    if (!DOM) {
+        console.error('Pagal pateikta selektoriu nerastas norimas elementas.');
+        return false;
+    }
+
+    const {list, imgPath, maxCount} = data;
 
     let HTML = '';
+    let generatedOurBlogsCount = 0;
 
-    HTML += `<div id="our_blog_block" class="col-12 blog-item">
-                    <img src="./img/blog/blog-1.jpg" alt="blog1" class="blog-img">
-                    <a href="#" class="blog-link-title">There are many variations</a>
-                    <a href="#" class="blog-link-a">Lifestyle</a>
-                    <p class="paragraph">13 February 2018
-                    <a href="#" class="blog-link-text"> By Envato</a></p>
-                    <p class="paragraph">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
-                    <a href="#" class="blog-link-read-more">Read More...</a>
+    for (let i = 0; i < list.length; i++) {
+        const ourBlog = list[i];
+
+
+        // if (!ourBlog.active) {
+        //     continue;
+        // }
+        // if (!isValidourBlogItem(ourBlog) ||
+        //     !ourBlog.active) {
+        //         continue;
+        //     }
+
+        if (generatedOurBlogsCount === maxCount) {
+            break;
+        }
+
+        generatedOurBlogsCount++;
+        HTML += `<div id="our_blog_block" class="col-12 blog-item">
+                    <img src="${imgPath + ourBlog.img}"class="blog-img" alt="">
+                    <a href="#" class="blog-link-title">${ourBlog.title_link}</a>
+                    <a href="#" class="blog-link-a">${ourBlog.theme_link}</a>
+                    <p class="paragraph">${ourBlog.date}</p>
+                    <a href="#" class="blog-link-text">${ourBlog.author_link}</a>
+                    <p class="paragraph">${ourBlog.paragraph}</p>
+                    <a href="#" class="blog-link-read-more">${ourBlog.information_link}</a>
                 </div>`;
+    }      
 
-                
     DOM.innerHTML = HTML;
 
 }
