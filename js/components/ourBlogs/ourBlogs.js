@@ -3,8 +3,6 @@
 
 function ourBlogs(selector, data) {
 
-    console.log(data);
-
     // if (!isValidOurBlogs(selector, data)) {
     //     return false;
     // }
@@ -23,10 +21,6 @@ function ourBlogs(selector, data) {
     for (let i = 0; i < list.length; i++) {
         const ourBlog = list[i];
 
-
-        // if (!ourBlog.active) {
-        //     continue;
-        // }
         // if (!isValidourBlogItem(ourBlog) ||
         //     !ourBlog.active) {
         //         continue;
