@@ -23,7 +23,8 @@ import { educationRender } from './components/education/educationRender.js'
 import filterSelection from './components/work/work-filter.js';
 // our client
 import { reviewsData } from './data/reviewsData.js';
-import { reviewsRender } from './components/ourClients/reviewsRender.js'
+import { reviewsRender } from './components/ourClients/reviewsRender.js';
+import { carousel } from './components/ourClients/carousel.js'
 // great people
 // subscribe
 // scroll action
@@ -59,7 +60,9 @@ educationRender('#educationExperience', educationData, experienceData)
 // hire me
 // our work
 // our client
-reviewsRender('#reviews', reviewsData)
+reviewsRender('#reviews', reviewsData);
+document.querySelector('#reviews').classList.add('carousel');
+carousel()
 // great people
 // subscribe
 // our blog
