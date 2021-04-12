@@ -37,8 +37,8 @@ function numbers(selector, data) {
         HTML += `<div class="col-12 col-lg-3">
                         <div class="numbers">
                             <i class="num-icon fa fa-${number.icon}" aria-hidden="true"></i>
-                            <h1 class="counter main_headings">${number.description}</h1>
-                            <p class="num-parag">${number.title}</p>
+                            <h1 class="counter main_headings">${number.value}</h1>
+                            <p class="num-parag">${number.subtitle}</p>
                         </div>
                     </div>`;
         
