@@ -80,7 +80,7 @@
     transition: color 1s;
     outline: none;
 }
-.headerBar-white .meniu-bar-icon-black {
+.headerBar-white .meniu-bar-icon {
     color: black;
     text-decoration: none;
     padding: 0;
