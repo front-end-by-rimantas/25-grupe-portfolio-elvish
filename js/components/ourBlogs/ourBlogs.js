@@ -33,6 +33,8 @@ function ourBlogs(selector, data) {
         generatedOurBlogsCount++;
         HTML += `<div id="our_blog_block" class="col-12 blog-item">
                     <img src="${imgPath + ourBlog.img}"class="blog-img" alt="">
+                    <a href="#" class="blog-video"></a>
+                    <i class="fa fa-${ourBlog.icon}"></i>
                     <a href="#" class="blog-link-title">${ourBlog.title_link}</a>
                     <a href="#" class="blog-link-a">${ourBlog.theme_link}</a>
                     <p class="paragraph">${ourBlog.date}</p>
