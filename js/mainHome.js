@@ -27,6 +27,7 @@ import { reviewsRender } from './components/ourClients/reviewsRender.js';
 import { carousel } from './components/ourClients/carousel.js'
 // great people
 // subscribe
+import { sendEmail } from './components/emailsend/sendEmail.js'
 // scroll action
 import transitions from './components/scrollAction.js';
 // our blog
@@ -65,6 +66,7 @@ document.querySelector('#reviews').classList.add('carousel');
 carousel()
 // great people
 // subscribe
+// sendEmail('tomas.va@yahoo.com');
 // our blog
 // get in touch
 // footer
