@@ -26,6 +26,8 @@ import { reviewsData } from './data/reviewsData.js';
 import { reviewsRender } from './components/ourClients/reviewsRender.js';
 import { carousel } from './components/ourClients/carousel.js'
 // great people
+import { greatPeopleData } from './data/greatPeopleData.js';
+import { renderGreatPeople } from './components/greatPeople/renderGreatPeople.js'
 // subscribe
 // scroll action
 import transitions from './components/scrollAction.js';
@@ -64,6 +66,7 @@ reviewsRender('#reviews', reviewsData);
 document.querySelector('#reviews').classList.add('carousel');
 carousel()
 // great people
+renderGreatPeople('#clients', greatPeopleData);
 // subscribe
 // our blog
 // get in touch
