@@ -103,12 +103,21 @@ class Achievements{
     
                 const isVisible = scrollY + innerHeight >= elementTop + elementHeight;
                 if (isVisible) {
-                    numberDOM.innerText = this.data.list[i].value;
+                    this.animateNumber(numberDOM, i);
+
                 }
             }
         })
     }
-
+    animateNumber(elementDOM, elementIndex) {
+        // ar element.animated === true
+        // priesingu atveju - animuoju ir pazymiu, jog jau suanimuotas
+        if (this.data.list[elementIndex].animated !== true) {
+            const targetNumber = this.data.list[elementIndex].value;
+            this.data.list[elementIndex].animated = true;
+            elementDOM.innerText = targetNumber;
+        }
+    }
 }
 
 export { Achievements };
