@@ -8,12 +8,15 @@
     background-position: center center;
     background-size: cover;
     color: white;
+    overflow: hidden;
+    position: relative;
 }
 
 .container-table {
     display: table;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .center-content {
@@ -47,6 +50,15 @@
     text-decoration: none;
     color: inherit;
 }
+
+#changingHeroText span {
+    animation: change_opacity 4s infinite alternate;
+  }
+  
+  @keyframes change_opacity {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
 
 .cv-btn {
     display: inline-block;
