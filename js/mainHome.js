@@ -11,6 +11,8 @@ import {fillPorgress, skills} from './components/pogress/progress.js'
 import {skillsData} from './data/skillsData.js'
 
 // our services
+import {ourServicesData} from './data/ourServicesData.js'
+import {ourServices} from './components/ourServices/ourServices.js'
 // numbers
 // education and experience
 import { educationData } from './data/educationData.js';
@@ -21,7 +23,8 @@ import { educationRender } from './components/education/educationRender.js'
 import filterSelection from './components/work/work-filter.js';
 // our client
 import { reviewsData } from './data/reviewsData.js';
-import { reviewsRender } from './components/ourClients/reviewsRender.js'
+import { reviewsRender } from './components/ourClients/reviewsRender.js';
+import { carousel } from './components/ourClients/carousel.js'
 // great people
 // subscribe
 // scroll action
@@ -50,13 +53,16 @@ skills("#progressCol1","#progressCol2", skillsData);
 document.addEventListener("scroll", () => fillPorgress(skillsData));
 
 // our services
+ourServices('#our_services_block', ourServicesData);
 // numbers
 // education and experience
 educationRender('#educationExperience', educationData, experienceData)
 // hire me
 // our work
 // our client
-reviewsRender('#reviews', reviewsData)
+reviewsRender('#reviews', reviewsData);
+document.querySelector('#reviews').classList.add('carousel');
+carousel()
 // great people
 // subscribe
 // our blog

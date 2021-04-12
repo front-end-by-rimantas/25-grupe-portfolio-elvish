@@ -55,15 +55,14 @@ let groupByN = (n, data) => {
   };
   
 // Fills progress bars on first scroll
-let scrolFunExec=false;
 function fillPorgress(data){
-    var elem = document.querySelector('.progress_area');
-    if(!checkVisible(elem)) return;
-    if(scrolFunExec) return;
-    scrolFunExec = true;
+    const elem = document.querySelectorAll('.progress_bar');
     const progArr = document.getElementsByClassName('progress_inner');
     let element, num;
     for(let p = 0; p < progArr.length; p++){
+        if(!checkVisible(elem[p])) continue;
+        if(data[p].scrolFunExec) continue;
+        data[p].scrolFunExec = true;
         element = progArr[p];
         element.animate([
             {width: 0 },
@@ -81,8 +80,8 @@ function fillPorgress(data){
 
 // Checking if element is visible
 function checkVisible(elm) {
-    var rect = elm.getBoundingClientRect();
-    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    const rect = elm.getBoundingClientRect();
+    const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
     return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
   }
 
