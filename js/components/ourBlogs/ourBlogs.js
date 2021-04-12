@@ -30,18 +30,24 @@ function ourBlogs(selector, data) {
             break;
         }
 
+        
+
         generatedOurBlogsCount++;
-        HTML += `<div id="our_blog_block" class="col-12 blog-item">
-                    <img src="${imgPath + ourBlog.img}"class="blog-img" alt="">
-                    <a href="#" class="blog-video"></a>
-                    <i class="fa fa-${ourBlog.icon}"></i>
+        HTML += `<div class="col-12 col-lg-4 blog-item">
+                    <div class="blog-video">
+                        <img src="${imgPath + ourBlog.img}" class="blog-img alt=">
+                        <a href="#" class="blog-video"></a>
+                        <i class="fa fa-${ourBlog.icon}"></i>
+                    </div>
                     <a href="#" class="blog-link-title">${ourBlog.title_link}</a>
                     <a href="#" class="blog-link-a">${ourBlog.theme_link}</a>
                     <p class="paragraph">${ourBlog.date}</p>
                     <a href="#" class="blog-link-text">${ourBlog.author_link}</a>
                     <p class="paragraph">${ourBlog.paragraph}</p>
                     <a href="#" class="blog-link-read-more">${ourBlog.information_link}</a>
-                </div>`;
+                 </div>`;
+                
+
     }      
 
     DOM.innerHTML = HTML;
