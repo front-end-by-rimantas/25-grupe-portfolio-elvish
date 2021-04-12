@@ -113,9 +113,27 @@ class Achievements{
         // ar element.animated === true
         // priesingu atveju - animuoju ir pazymiu, jog jau suanimuotas
         if (this.data.list[elementIndex].animated !== true) {
+
             const targetNumber = this.data.list[elementIndex].value;
             this.data.list[elementIndex].animated = true;
-            elementDOM.innerText = targetNumber;
+            
+            const timeToAnimate = 2;                           // s
+            const fps = 30;                                    // kartai per sekunde
+            const framesCount = timeToAnimate * fps;           // kiek is viso bus kadru
+            const numberIncrament = targetNumber / framesCount;
+            let printedValue = 0;
+            let currentFrameIndex = 0;
+
+            //setTimeout(func, time to wait in ms)
+            const timer = setInterval(() => {
+                printedValue += numberIncrament;
+                currentFrameIndex++;
+                elementDOM.innerText = Math.round(printedValue);
+
+                if (currentFrameIndex === framesCount) {
+                    clearInterval(timer)
+                }
+            }, 1000 / fps)
         }
     }
 }
