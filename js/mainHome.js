@@ -14,8 +14,8 @@ import {skillsData} from './data/skillsData.js'
 import {ourServicesData} from './data/ourServicesData.js'
 import {ourServices} from './components/ourServices/ourServices.js'
 // numbers
-import { numbersData } from './data/numbersData.js';
-import { numbers } from './components/numbers.js';
+import { achievementsData } from './data/achievementsData.js';
+import { Achievements } from './components/achievements/Achievements.js';
 // education and experience
 import { educationData } from './data/educationData.js';
 import { experienceData } from './data/educationData.js';
@@ -57,7 +57,9 @@ document.addEventListener("scroll", () => fillPorgress(skillsData));
 // our services
 ourServices('#our_services_block', ourServicesData);
 // numbers
-numbers('#numbers_block', numbersData);
+const achievement = new Achievements('#numbers_block', achievementsData);
+// achievement.render();
+
 // education and experience
 educationRender('#educationExperience', educationData, experienceData)
 // hire me
