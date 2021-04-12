@@ -39,7 +39,9 @@ class Achievements{
             return false
         }
         this.DOM = DOM;
+
         this.render();
+        this.addEvents();
     }
 
     isValidSelector() {
@@ -81,7 +83,7 @@ class Achievements{
             HTML += `<div class=" achievement col-12 col-lg-3">
                         <div class="numbers">
                             <i class="num-icon fa fa-${item.icon}" aria-hidden="true"></i>
-                            <h1 class="counter main_headings">${item.value}</h1>
+                            <h1 class="counter main_headings">0</h1>
                             <p class="num-parag">${item.subtitle}</p>
                         </div>
                     </div>`;
@@ -89,7 +91,24 @@ class Achievements{
 
         this.DOM.innerHTML = HTML;
     }
-}
 
+    addEvents() {
+        addEventListener('scroll', () => {
+            const allNumbersDOM = this.DOM.querySelectorAll('.counter');
+            
+            for (let i = 0; i < allNumbersDOM.length; i++) {
+                const numberDOM = allNumbersDOM[i];
+                const elementTop = allNumbersDOM[0].offsetTop;
+                const elementHeight = allNumbersDOM[0].clientHeight;
+    
+                const isVisible = scrollY + innerHeight >= elementTop + elementHeight;
+                if (isVisible) {
+                    numberDOM.innerText = this.data.list[i].value;
+                }
+            }
+        })
+    }
+
+}
 
 export { Achievements };
