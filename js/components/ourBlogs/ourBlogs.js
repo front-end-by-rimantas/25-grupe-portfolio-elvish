@@ -1,7 +1,4 @@
-function isValidOurBlogs() {
-    return true;
-}
-
+import {isValidOurBlogs} from './isValidOurBlogs.js';
 
 function ourBlogs(selector, data) {
     // input validation 
