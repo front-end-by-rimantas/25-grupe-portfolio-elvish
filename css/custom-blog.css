@@ -59,3 +59,8 @@
 .blog-hero h1 {
     margin-bottom: 20px;
 }
+
+/* footer */
+.container-fluid.footer-container{
+    background-color: white;
+}
