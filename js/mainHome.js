@@ -58,8 +58,6 @@ document.addEventListener("scroll", () => fillPorgress(skillsData));
 ourServices('#our_services_block', ourServicesData);
 // numbers
 const achievement = new Achievements('#numbers_block', achievementsData);
-// achievement.render();
-
 // education and experience
 educationRender('#educationExperience', educationData, experienceData)
 // hire me
