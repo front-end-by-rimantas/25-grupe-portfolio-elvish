@@ -1,44 +1,52 @@
-const meniuData = [
+const headerData = [
     {
         selectorname: 'Home',
-        href: '#ho',
-        class: 'meniu-bar-selector meniubtn'
+        href: 'Home',
+        class: 'meniu-bar-selector',
+        position:
     },
     {
         selectorname: 'About',
-        href: '#ab',
-        class: 'meniu-bar-selector aboutbtn'        
+        href: 'about',
+        class: 'meniu-bar-selector',
+        position:        
     },
     {
         selectorname: 'Services',
-        href: '#se',
-        class: 'meniu-bar-selector servicesbtn'        
+        href: 'services',
+        class: 'meniu-bar-selector',
+        position:        
     },
     {
         selectorname: 'Education',
-        href: '#ed',
-        class: 'meniu-bar-selector educationbtn'        
+        href: 'education',
+        class: 'meniu-bar-selector',
+        position:        
     },
     {
         selectorname: 'Work',
-        href: '#wo',
-        class: 'meniu-bar-selector workbtn'        
+        href: 'ourWork',
+        class: 'meniu-bar-selector',
+        position:        
     },
     {
         selectorname: 'Client',
-        href: '#cl',
-        class: 'meniu-bar-selector clientbtn'        
+        href: 'ourClients',
+        class: 'meniu-bar-selector',
+        position:        
     },
     {
         selectorname: 'Blog',
-        href: '#bl',
-        class: 'meniu-bar-selector blogbtn'        
+        href: 'blog',
+        class: 'meniu-bar-selector',
+        position:        
     },
     {
         selectorname: 'Contact',
-        href: '#co',
-        class: 'meniu-bar-selector contactbtn'        
+        href: 'contact',
+        class: 'meniu-bar-selector',
+        position:        
     }
 ]
 
-export { meniuData }
+export { headerData }

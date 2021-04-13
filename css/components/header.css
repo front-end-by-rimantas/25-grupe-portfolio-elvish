@@ -12,7 +12,7 @@
 .headerBar {
     padding: 10px;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     background-color: transparent;
     transition: background-color 1s;
 }
@@ -30,6 +30,7 @@
     padding: 0 14px;
     position: relative;
     transition: color 1s;
+    cursor: pointer;
 }
 .headerBar .meniu-bar-icon {
     color: white;
@@ -60,7 +61,7 @@
     background-color: white;    
     padding: 10px;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     transition: background-color 1s; 
     box-shadow: 0px 1px 10px grey;
 }
@@ -79,6 +80,7 @@
     position: relative;
     transition: color 1s;
     outline: none;
+    cursor: pointer;
 }
 .headerBar-white .meniu-bar-icon {
     color: black;
