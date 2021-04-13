@@ -32,8 +32,43 @@
     background-color: white;
 }
 
+
+.searchCol{
+    color: var(--color-grey);
+    font-size: 14px;
+    width: 100%;
+    padding: 20px;
+}
 .blog-titles{
     text-transform: uppercase;
     color: var(--color-main);
-    font-size: 15px;
+    font-size: 14px;
+}
+.recentPostBox{
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: solid var(--color-grey-light) 1px;
+}
+.recentPostBox:last-of-type{
+    border-bottom: none;
+}
+.recentPostBox img{
+    float: left;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.blog-text {
+    color: var(--color-main);
+    float: left;
+    width: 65%;
+    padding-left: 10px;
+    padding-top:3px;
+    line-height: 20px;
+}
+
+.blog-text > p {
+    font-size: 12px;
+    color: var(--color-grey);
 }

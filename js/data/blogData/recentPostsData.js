@@ -1,5 +1,6 @@
 const recentPosts = {
-    imgPath: './img/blog/',
+    maxCount: 3,
+    imgPath: '../img/blog/',
     list: [
         {   
             img: 'blog-1.jpg',
