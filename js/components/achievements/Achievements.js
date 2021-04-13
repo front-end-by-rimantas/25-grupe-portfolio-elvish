@@ -95,9 +95,10 @@ class Achievements{
             const allNumbersDOM = this.DOM.querySelectorAll('.counter');
             
             for (let i = 0; i < allNumbersDOM.length; i++) {
+                
                 const numberDOM = allNumbersDOM[i];
-                const elementTop = allNumbersDOM[0].offsetTop;
-                const elementHeight = allNumbersDOM[0].clientHeight;
+                const elementTop = numberDOM.offsetTop;
+                const elementHeight = numberDOM.clientHeight;
     
                 const isVisible = scrollY + innerHeight >= elementTop + elementHeight;
                 if (isVisible) {
