@@ -30,7 +30,6 @@ function ourBlogs(selector, data) {
             break;
         }
 
-        
 
         generatedOurBlogsCount++;
         HTML += `<div class="col-12 col-lg-4 blog-item">
