@@ -1,0 +1,29 @@
+.pages_block {
+    line-height: 20px;
+    padding: 20px;
+}
+
+.pageNumber{
+    color: var(--color-grey);
+    text-decoration: none;
+    padding: 10px 13px;
+    margin: 20px 3px;
+    border-radius: 5px;
+}
+
+.pageArrow{
+    margin: 0 25px;
+    text-decoration: none;
+    color: var(--color-grey);
+}
+
+.selected{
+    background-color: var(--color-main);
+    color:white;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.pageNumber:hover{
+    color: var(--color-main);
+}
