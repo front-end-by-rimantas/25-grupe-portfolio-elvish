@@ -11,7 +11,7 @@ const reviewsData = [
     },
     {
         name: 'Antonio Hernandez',
-        Site: 'Google',
+        site: 'Google',
         review: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, illum necessitatibus, quisquam ipsam culpa non quas aut quidem ratione alias officiis modi adipisci minima soluta provident tempore delectus reiciendis totam.',
     },
 ]
