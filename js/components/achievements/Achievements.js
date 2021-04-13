@@ -80,13 +80,11 @@ class Achievements{
         let HTML = '';
 
         for (const item of this.data.list) {
-            HTML += `<div class=" achievement col-12 col-lg-3">
-                        <div class="numbers">
+            HTML += `<div class="numbers achievement col-12 col-lg-3">
                             <i class="num-icon fa fa-${item.icon}" aria-hidden="true"></i>
                             <h1 class="counter main_headings">0</h1>
                             <p class="num-parag">${item.subtitle}</p>
-                        </div>
-                    </div>`;
+                        </div>`;
         }
 
         this.DOM.innerHTML = HTML;
