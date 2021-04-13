@@ -31,14 +31,32 @@
 
 /* hero */
 .hero-100{
- background-image: url("../../img/blog/header_img.jpg");
+    background-image: url("../../img/blog/header_img.jpg");
 
 }
-
 .h-100vh{
     height: 45vh;
 }
-
 .hero-100:after{
     content: none;
+}
+.blog-hero .container-fluid {
+    padding: 110px;
+    
+}
+
+.blog-hero a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 6;
+    color: rgba(255, 255, 255, 0.55);
+}
+.blog-hero .blog-text{
+    display: inline-block;
+    text-transform: uppercase;
+    z-index: 6;
+}
+.blog-hero h1 {
+    margin-bottom: 20px;
 }
