@@ -2,6 +2,7 @@
 // blog
 //import { ourBlogsData } from './data/ourBlogsData.js'
 //import { ourBlogs } from './components/ourBlogs/ourBlogs.js'
+import transitions from './components/scrollAction.js';
 import { renderPages } from './components/blog-lifestyle/renderPages.js'
 // search column
 import { renderCategories } from './components/blog-lifestyle/renderCategories.js'
@@ -18,7 +19,8 @@ import { footerRender } from './components/footer/footerRender.js';
 // back to top button
 
 // FUNKCIJU PANAUDOJIMAS
-
+//header
+document.getElementById('backToTop').style.display = "none";
 // blog posts
 //ourBlogs('#blog_posts_block', ourBlogsData);
 renderPages('#pages', 4);

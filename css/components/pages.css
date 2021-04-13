@@ -89,7 +89,7 @@
     border-radius: 5px;
 }
 
-.blog-text {
+.post-texts {
     color: var(--color-main);
     float: left;
     width: 65%;
@@ -98,7 +98,7 @@
     line-height: 20px;
 }
 
-.blog-text > p {
+.post-texts > p {
     font-size: 12px;
     color: var(--color-grey);
 }

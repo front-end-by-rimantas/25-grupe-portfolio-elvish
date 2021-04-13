@@ -20,7 +20,7 @@ function renderRecentPosts(selector, data) {
         generatedOurBlogsCount++;
         HTML += `<div class="recentPostBox">
                     <img src="${imgPath + blog.img}" alt="Blog Image">
-                    <div class = "blog-text">
+                    <div class = "post-texts">
                         <h3 class=blog-title>${blog.title}</h3>
                         <p class = "datePublished">${blog.date}</p>
                     </div>
