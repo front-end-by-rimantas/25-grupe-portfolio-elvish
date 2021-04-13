@@ -3,7 +3,7 @@ const ourBlogsData = {
      imgPath: './img/blog/',
      list: [
         {
-             img: ["blog-1.jpg"],
+             img: "blog-1.jpg",
              title: "There are many variations",
              category: "Lifestyle",
              date: "13 February 2018",
@@ -14,7 +14,7 @@ const ourBlogsData = {
         },
         {
              
-             img: ["blog-2.jpg"],
+             img: "blog-2.jpg",
              title: "Contrary to popular belief",
              category: "Travel",
              date: "13 February 2018",
@@ -26,7 +26,7 @@ const ourBlogsData = {
              active: true
         },
         {
-             img: ["blog-3.jpg"],
+             img: "blog-3.jpg",
              title: "Lorem ipsum is not simply",
              category: "Food &amp; Drinks",
              date: "13 February 2018",
