@@ -27,3 +27,13 @@
 .pageNumber:hover{
     color: var(--color-main);
 }
+
+.bg-white{
+    background-color: white;
+}
+
+.blog-titles{
+    text-transform: uppercase;
+    color: var(--color-main);
+    font-size: 15px;
+}
