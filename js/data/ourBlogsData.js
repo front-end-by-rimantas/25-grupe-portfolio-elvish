@@ -3,38 +3,35 @@ const ourBlogsData = {
      imgPath: './img/blog/',
      list: [
         {
-             img: "blog-1.jpg",
-             title_link: "There are many variations",
-             theme_link: "Lifestyle",
+             img: ["blog-1.jpg"],
+             title: "There are many variations",
+             category: "Lifestyle",
              date: "13 February 2018",
-             author_link: "By Envato",
-             paragraph: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
+             author: "By Envato",
+             article: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
              information_link: "Read More...",
              active: true
         },
         {
-             visual: [
-                 {
-                    video_link: "#",
-                    icon: "play",
-                 }
-             ],
-             img: "blog-2.jpg",
-             title_link: "Contrary to popular belief",
-             theme_link: "Travel",
+             
+             img: ["blog-2.jpg"],
+             title: "Contrary to popular belief",
+             category: "Travel",
              date: "13 February 2018",
-             author_link: "By Envato",
-             paragraph: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
+             author: "By Envato",
+             article: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
              information_link: "Read More...",
+             video: "#",
+             icon: "play",
              active: true
         },
         {
-             img: "blog-3.jpg",
-             title_link: "Lorem ipsum is not simply",
-             theme_link: "Food &amp; Drinks",
+             img: ["blog-3.jpg"],
+             title: "Lorem ipsum is not simply",
+             category: "Food &amp; Drinks",
              date: "13 February 2018",
-             author_link: "By Envato",
-             paragraph: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
+             author: "By Envato",
+             article: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
              information_link: "Read More...",
              active: true
         },
