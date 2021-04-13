@@ -11,9 +11,9 @@
 @import './components/backToTop.css';
 @import './components/carousel.css';
 @import './components/education.css';
-@import './components/blog.css';
+@import './components/blog.css'; */
 @import './components/footer.css';
-@import './components/get-in-touch.css';
+/* @import './components/get-in-touch.css';
 @import './components/great.people.css'; */
 @import './components/header.css';
 @import './components/hero.css';
@@ -44,7 +44,6 @@
     padding: 110px;
     
 }
-
 .blog-hero a{
     display: inline-block;
     text-decoration: none;
