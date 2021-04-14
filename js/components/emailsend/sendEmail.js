@@ -1,3 +1,5 @@
+import { isValidEmail } from '../../utils/isValidEmail.js'
+
 document.getElementById('email_sending').addEventListener('click', sendEmail);
 
 document.getElementById('sub-email').addEventListener('keypress', logKey);
@@ -9,19 +11,8 @@ function logKey(e) {
   }
 }
 
-function isValidEmail(inputText) {
-const mailformat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if(inputText.match(mailformat)) {
-        return true;
-        } else {
-        alert('You have entered an invalid email address!');
-        return false;
-        }   
-}
-
-
 function sendEmail() {
-    let recipient = document.getElementById('sub-email').value;
+    const recipient = document.getElementById('sub-email').value;
     document.getElementById('sub-email').value = '';
     // console.log('Gavėjas: ', recipient);
         if (recipient === '') {
@@ -30,7 +21,7 @@ function sendEmail() {
         if (!isValidEmail(recipient)) {
             return;
         }
-    // console.log(`Jūs paspaudėte Subscribe knopką. Gavėjas: ${recipient}`);
+    // console.log(`Jūs paspaudėte Subscribe knopką arba Enter. Gavėjas: ${recipient}`);
     Email.send({
       Host: 'smtp.gmail.com',
       Username: 'bit25.Webpage@gmail.com',
