@@ -2,7 +2,7 @@ const ourServicesData = {
     maxCount: 6,
     list: [
         {
-             icon: "desktop",
+             icon: "server",
              title: "Graphic Design",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
              active: true
@@ -26,7 +26,7 @@ const ourServicesData = {
              active: true
         },
         {
-             icon: "mobile",
+             icon: "desktop",
              title: "Responsive Design",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
              active: true
