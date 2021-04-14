@@ -1,0 +1,88 @@
+/* init */
+@import './init/reset.css';
+@import './init/variables.css';
+@import './init/layout.css';
+@import './init/base.css';
+/* 3rd party */
+@import './3rd-party/font-awesome.min.css';
+/* components */
+@import './components/blog.css';
+@import './components/footer.css';
+@import './components/header.css';
+@import './components/hero.css';
+@import './components/pages.css';
+
+/* CUSTOM STILIUS SEKCIJOMS */
+
+.main_headings{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* header */
+
+/* hero */
+.hero-100{
+    background-image: url("../../img/blog/header_img.jpg");
+
+}
+.h-100vh{
+    height: 45vh;
+}
+.hero-100:after{
+    content: none;
+}
+.blog-hero .container-fluid {
+    padding: 110px;
+    
+}
+.blog-hero a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 6;
+    color: rgba(255, 255, 255, 0.55);
+}
+.blog-hero .blog-text{
+    display: inline-block;
+    text-transform: uppercase;
+    z-index: 6;
+}
+.blog-hero h1 {
+    margin-bottom: 20px;
+}
+
+/*post*/
+.quote {
+    color: var(--color-main);
+    font-size: 20px;
+    padding: 20px;
+    border: solid var(--color-grey-light-border) 1px;
+    border-left: solid  var(--color-grey-light-border) 4px;;
+    background-color: var(--color-grey-lighter);
+    line-height: 32px;
+}
+.single-post{
+    padding: 10px;
+}
+.single-post > h2 {
+    margin-bottom: 20px;
+}
+.single-post-texts{
+    padding: 30px;
+}
+
+.spanDate{
+    float:right;
+}
+
+.blogInfo  a{
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+
+/* footer */
+.container-fluid.footer-container{
+    background-color: white;
+}

@@ -10,7 +10,7 @@ const lifestyleData = {
             author: "By Envato",
             article: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
             information_link: "Read More...",
-            link_read_more: "#",
+            link_read_more: "./post",
             blog_type: "img",
             active: true
        },
@@ -23,7 +23,7 @@ const lifestyleData = {
             author: "By Envato",
             article: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
             information_link: "Read More...",
-            link_read_more: "#",
+            link_read_more: "./post",
             video: "#",
             icon: "play",
             blog_type: 'video',
@@ -37,7 +37,7 @@ const lifestyleData = {
             author: "By Envato",
             article: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
             information_link: "Read More...",
-            link_read_more: "#",
+            link_read_more: "./post",
             blog_type: "img",
             active: true
        },
