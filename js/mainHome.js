@@ -31,6 +31,7 @@ import { carousel } from './components/ourClients/carousel.js'
 import { greatPeopleData } from './data/greatPeopleData.js';
 import { renderGreatPeople } from './components/greatPeople/renderGreatPeople.js'
 // subscribe
+import { sendEmail } from './components/emailsend/sendEmail.js'
 // scroll action
 import transitions from './components/scrollAction.js';
 // our blog
@@ -73,6 +74,7 @@ carousel()
 // great people
 renderGreatPeople('#clients', greatPeopleData);
 // subscribe
+// sendEmail('tomas.va@yahoo.com');
 // our blog
 ourBlogs('#our_blogs_block', ourBlogsData);
 // get in touch

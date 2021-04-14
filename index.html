@@ -231,8 +231,8 @@
             <div class="col-12 asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
             <p class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3 paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             <form class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3 subscribe-form">
-                <input type="email" name="email" id="sub-email" placeholder="Email">
-                <input type="button" value="Subscribe" class="btn btn-black btn-hover">
+                <input type="email" name="email" id="sub-email" placeholder="Email" required>
+                <input type="button" value="Subscribe" class="btn btn-black btn-hover" id="email_sending">
             </form>
         </div>
     </div>
@@ -360,6 +360,7 @@
     <script src="./js/mainHome.js" type="module" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.26.2/tsparticles.min.js" integrity="sha512-cXrWTSDZSAywjOd3Pb9yXWdfb+PJU8U6uh/JxkLyIcvxbZcmv2TDHSs3/C7YY+Am/RxrvwRM6NgtFbYQdpnNoA==" crossorigin="anonymous"></script>
     <script src="./js/components/particles/app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
