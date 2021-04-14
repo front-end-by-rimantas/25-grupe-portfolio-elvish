@@ -30,6 +30,9 @@
 /* hero */
 
 /* about me */
+.hello {
+    color: var(--color-main);
+}
 
 /* our services */
 
