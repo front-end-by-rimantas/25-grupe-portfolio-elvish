@@ -4,6 +4,7 @@ import { ourBlogsData } from './data/ourBlogsData.js'
 import { ourBlogs } from './components/ourBlogs/ourBlogs.js'
 import transitions from './components/scrollAction.js';
 import { renderPages } from './components/blog-lifestyle/renderPages.js'
+import {lifestyleData} from './data/blogData/lifestyleData.js'
 // search column
 import { renderCategories } from './components/blog-lifestyle/renderCategories.js'
 import { categories } from './data/blogData/categoriesData.js';
@@ -22,14 +23,15 @@ import { footerRender } from './components/footer/footerRender.js';
 //header
 document.getElementById('backToTop').style.display = "none";
 // blog posts
-ourBlogsData.imgPath = '../img/blog/'
+ourBlogsData.imgPath = '../img/blog/';
+ourBlogsData.maxCount = 1;
 ourBlogs('#blog_posts_block', ourBlogsData);
 
+ourBlogs('#blog_posts_block2', lifestyleData);
 const blogItem = document.querySelectorAll('.blog-item');
 for (const elem of blogItem) {
     elem.classList.remove("col-lg-4");
 }
-
 renderPages('#pages', 4);
 document.querySelector('.pageNumber').classList.add("selected");
 // search column
