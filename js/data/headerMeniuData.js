@@ -1,44 +1,60 @@
-const meniuData = [
+const headerData = [
     {
         selectorname: 'Home',
-        href: '#ho',
-        class: 'meniu-bar-selector meniubtn'
+        href: 'Home',
+        class: 'meniu-bar-selector selectedSelector',
+        positionTop: 0,
+        positionBot: 600,
     },
     {
         selectorname: 'About',
-        href: '#ab',
-        class: 'meniu-bar-selector aboutbtn'        
+        href: 'About',
+        class: 'meniu-bar-selector',
+        positionTop: 600,
+        positionBot: 1600,        
     },
     {
         selectorname: 'Services',
-        href: '#se',
-        class: 'meniu-bar-selector servicesbtn'        
+        href: 'our-services',
+        class: 'meniu-bar-selector',
+        positionTop: 1600,
+        positionBot: 2700,        
     },
     {
         selectorname: 'Education',
-        href: '#ed',
-        class: 'meniu-bar-selector educationbtn'        
+        href: 'education',
+        class: 'meniu-bar-selector',
+        positionTop: 2700,
+        positionBot: 4300,       
     },
     {
         selectorname: 'Work',
-        href: '#wo',
-        class: 'meniu-bar-selector workbtn'        
+        href: 'ourWork',
+        class: 'meniu-bar-selector',
+        positionTop: 4300,
+        positionBot: 5300,        
     },
     {
         selectorname: 'Client',
-        href: '#cl',
-        class: 'meniu-bar-selector clientbtn'        
+        href: 'ourClients',
+        class: 'meniu-bar-selector',
+        positionTop: 5300,
+        positionBot: 6277,        
     },
     {
         selectorname: 'Blog',
-        href: '#bl',
-        class: 'meniu-bar-selector blogbtn'        
+        href: 'blog',
+        class: 'meniu-bar-selector',
+        positionTop: 6900,
+        positionBot: 7677,        
     },
     {
         selectorname: 'Contact',
-        href: '#co',
-        class: 'meniu-bar-selector contactbtn'        
+        href: 'contact',
+        class: 'meniu-bar-selector',
+        positionTop: 7677,
+        positionBot: 9000,        
     }
 ]
 
-export { meniuData }
+export { headerData }

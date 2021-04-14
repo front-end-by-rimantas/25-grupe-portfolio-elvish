@@ -69,9 +69,14 @@
 
 .categories{
     margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 .categories > i {
     margin-right: 5px;
+}
+.categories:hover{
+    color: var(--color-main);
 }
 
 .recentPostBox{
@@ -79,6 +84,7 @@
     padding: 20px 0;
     width: 100%;
     border-bottom: solid var(--color-grey-light) 1px;
+    cursor: pointer;
 }
 .recentPostBox:last-of-type{
     border-bottom: none;
@@ -113,4 +119,9 @@
     background-color: var(--color-grey-lighter);
     padding:  5px;
     cursor:pointer;
+    transition: all 0.5s;
+}
+.tag:hover{
+    color: var(--color-main);
+    border-color: var(--color-main);
 }
