@@ -17,14 +17,22 @@ function renderComments(selector, data) {
             break;
         }
 
+        if(blog.type === "reply"){
+            HTML += `<div class="reply userComment">`;
+        } else {
+            HTML += `<div class = "userComment">`;
+        }
+        
+
         generatedOurBlogsCount++;
-        HTML += `<div><img src="${imgPath + blog.img}" alt="User Photo"></div>
+        HTML += `<div class="userImgDiv"><img src="${imgPath + blog.img}" class="userImg" alt="User Photo"></div>
                 <div>
                     <h3>${blog.name}</h3>
                     <p>${blog.date}</p>
                     <p class="paragraph">${blog.comment}</p>
-                    <div><i class="fa fa-reply" aria-hidden="true"></i> Reply</div>
-                </div>`;
+                    <div class="replybtn"><i class="fa fa-reply" aria-hidden="true"></i> Reply</div>
+                </div>
+            </div>`;
     }      
 
     DOM.innerHTML = HTML;
