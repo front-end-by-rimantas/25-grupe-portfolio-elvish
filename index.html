@@ -26,7 +26,7 @@
     
     <!-- HERO START-->
     <div class="hero-100 h-100vh" id="Home">
-        <div class="background-overlay"></div> 
+        <div class="background-overlay"></div>
         <div class="container-table">
             <div class="container-fluid center-content">
                 <div class="row just-centered col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3">
@@ -51,9 +51,10 @@
                     <i class="fa fa-angle-down bounce" aria-hidden="true">
                     </i>
                 </a>
-            </div>                             
+            </div>
             </div>
         </div>
+        <canvas id="tsparticles"></canvas>
     </div>
     <!-- HERO END-->
 
@@ -116,40 +117,10 @@
     <!-- OUR SRVICES END-->
 
     <!-- NUMBERS START-->
-    <div class="numbers-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-3">
-                    <div class="numbers">
-                        <i class="num-icon fa fa-clock-o" aria-hidden="true"></i>
-                        <h1 class="main_headings">654</h1>
-                        <p class="num-parag">Working Hours</p>
-                    </div>
-                </div>    
-                <div class="col-12 col-lg-3">    
-                    <div class="numbers">
-                        <i class="num-icon fa fa-gift" aria-hidden="true"></i>
-                        <h1 class="main_headings">6400</h1>
-                        <p class="num-parag">Completed Projects</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3">  
-                    <div class="numbers">
-                        <i class="num-icon fa fa-user-circle-o" aria-hidden="true"></i>
-                        <h1 class="main_headings">2389</h1>
-                        <p class="num-parag">No. of Clients</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3">  
-                    <div class="numbers">
-                        <i class="num-icon fa fa-users" aria-hidden="true"></i>
-                        <h1 class="main_headings">653</h1>
-                        <p class="num-parag">Team Members</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
+    <div class="container numbers_bg">
+        <div id="numbers_block" class="row"></div>
+    </div>
+    
     <!-- NUMBERS END-->
 
     <!-- EDUCATION AND EXPERIENCE START-->
@@ -245,13 +216,8 @@
                 <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
                 <p class="paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
-        <div class="row great-people clients">
-                <div class="col-12 col-lg-2"><img src="./img/clients/1.png" alt="Coffee chocolate"></div>
-                <div class="col-12 col-lg-2"><img src="./img/clients/2.png" alt="Fisherman"></div>
-                <div class="col-12 col-lg-2"><img src="./img/clients/3.png" alt="Mountainbike"></div>
-                <div class="col-12 col-lg-2"><img src="./img/clients/4.png" alt="Mountain"></div>
-                <div class="col-12 col-lg-2"><img src="./img/clients/5.png" alt="Chocolate"></div>
-                <div class="col-12 col-lg-2"><img src="./img/clients/6.png" alt="Market"></div>
+        <div id = "clients" class="row great-people clients">
+                <!-- <div class="col-12 col-lg-2"><img src="./img/clients/1.png" alt="Coffee chocolate"></div> -->
             </div>
         </div>
         </div>
@@ -324,7 +290,9 @@
     <!-- OUR BLOG END-->
 
     <!-- GET IN TOUCH START-->
+
     <div class="container" id="contact">
+
         <div class="row">
             <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 git_text">
                 <h2 class="main_headings">Get in <span>tuch</span></h2>
@@ -399,9 +367,8 @@
     <!-- BACK TO TOP BUTTON END-->
 
     <script src="./js/mainHome.js" type="module" defer></script>
-    
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.26.2/tsparticles.min.js" integrity="sha512-cXrWTSDZSAywjOd3Pb9yXWdfb+PJU8U6uh/JxkLyIcvxbZcmv2TDHSs3/C7YY+Am/RxrvwRM6NgtFbYQdpnNoA==" crossorigin="anonymous"></script>
+    <script src="./js/components/particles/app.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 

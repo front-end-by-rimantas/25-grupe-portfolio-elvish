@@ -1,0 +1,116 @@
+.pages_block {
+    line-height: 20px;
+    padding: 20px;
+}
+
+.pageNumber{
+    color: var(--color-grey);
+    text-decoration: none;
+    padding: 10px 13px;
+    margin: 20px 3px;
+    border-radius: 5px;
+}
+
+.pageArrow{
+    margin: 0 25px;
+    text-decoration: none;
+    color: var(--color-grey);
+}
+
+.selected{
+    background-color: var(--color-main);
+    color:white;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.pageNumber:hover{
+    color: var(--color-main);
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.searchCol{
+    color: var(--color-grey);
+    font-size: 14px;
+    width: 100%;
+    padding: 25px;
+}
+.blog-titles{
+    text-transform: uppercase;
+    color: var(--color-main);
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.search {
+    position: relative;
+    border: solid var(--color-grey-light-border) 1px;
+    outline: var(--color-main);
+    line-height: 40px;
+}
+.search > input {
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin: 9px 0 0 12px;
+    width: 95%;
+}
+.fa.fa-search{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: var(--color-main);
+    font-size: 17px;
+    cursor:pointer;
+}
+
+.categories{
+    margin-top: 10px;
+}
+.categories > i {
+    margin-right: 5px;
+}
+
+.recentPostBox{
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: solid var(--color-grey-light) 1px;
+}
+.recentPostBox:last-of-type{
+    border-bottom: none;
+}
+.recentPostBox img{
+    float: left;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.post-texts {
+    color: var(--color-main);
+    float: left;
+    width: 65%;
+    padding-left: 10px;
+    padding-top:3px;
+    line-height: 20px;
+}
+
+.post-texts > p {
+    font-size: 12px;
+    color: var(--color-grey);
+}
+
+.tag{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--color-grey-border);
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    border: solid var(--color-grey-light-border) 1px;
+    background-color: var(--color-grey-lighter);
+    padding:  5px;
+    cursor:pointer;
+}
