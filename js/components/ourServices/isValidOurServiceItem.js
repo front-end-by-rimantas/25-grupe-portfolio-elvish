@@ -14,6 +14,7 @@ function isValidourServiceItem(ourServices) {
         ourServices.icon === '') {
         console.warn('ERROR: icon turi buti ne tuscias tekstas');
         return false;
+        
     // } else if (!isValidFileFormat(ourServices.icon, ['png'])) {
     //     console.log('ERROR: failo pavadinimas neatitinka formato');
     //     return false;

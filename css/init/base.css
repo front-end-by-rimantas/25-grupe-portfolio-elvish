@@ -9,7 +9,7 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     font-size: 35px;
-    color: var(--color-main);
+    color: var(--color-grey-dark);
     font-weight: 500;
     margin-bottom: 8px;
 }
@@ -30,9 +30,13 @@
 .asterisk::before, .asterisk::after {
     display: inline-block;
     content: "";
-    border-top: 1px solid var(--color-grey-light);
+    border-top: 1px solid var(--color-grey-border);
     width: 2rem;
     margin: 7px 0.5rem;
+}
+
+.fa.fa-asterisk {
+    color: var(--color-grey-dark);
 }
 
 .center {
