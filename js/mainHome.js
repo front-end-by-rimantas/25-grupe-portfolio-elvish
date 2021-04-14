@@ -14,6 +14,8 @@ import {skillsData} from './data/skillsData.js'
 import {ourServicesData} from './data/ourServicesData.js';
 import {ourServices} from './components/ourServices/ourServices.js';
 // numbers
+import { achievementsData } from './data/achievementsData.js';
+import { Achievements } from './components/achievements/Achievements.js';
 // education and experience
 import { educationData } from './data/educationData.js';
 import { experienceData } from './data/educationData.js';
@@ -23,8 +25,11 @@ import { educationRender } from './components/education/educationRender.js'
 import filterSelection from './components/work/work-filter.js';
 // our client
 import { reviewsData } from './data/reviewsData.js';
-import { reviewsRender } from './components/ourClients/reviewsRender.js'
+import { reviewsRender } from './components/ourClients/reviewsRender.js';
+import { carousel } from './components/ourClients/carousel.js'
 // great people
+import { greatPeopleData } from './data/greatPeopleData.js';
+import { renderGreatPeople } from './components/greatPeople/renderGreatPeople.js'
 // subscribe
 // scroll action
 import transitions from './components/scrollAction.js';
@@ -56,13 +61,17 @@ document.addEventListener("scroll", () => fillPorgress(skillsData));
 // our services
 ourServices('#our_services_block', ourServicesData);
 // numbers
+const achievement = new Achievements('#numbers_block', achievementsData);
 // education and experience
 educationRender('#educationExperience', educationData, experienceData)
 // hire me
 // our work
 // our client
-reviewsRender('#reviews', reviewsData)
+reviewsRender('#reviews', reviewsData);
+document.querySelector('#reviews').classList.add('carousel');
+carousel()
 // great people
+renderGreatPeople('#clients', greatPeopleData);
 // subscribe
 // our blog
 ourBlogs('#our_blogs_block', ourBlogsData);

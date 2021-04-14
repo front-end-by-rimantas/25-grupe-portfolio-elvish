@@ -1,5 +1,7 @@
 .row-blog {
+    display: inline-block;
     padding-top: 38px;
+    width: 100%;
 }
 
 .blog-item {

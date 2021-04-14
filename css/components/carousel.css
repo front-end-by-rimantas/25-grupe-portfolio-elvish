@@ -1,0 +1,29 @@
+.carousel {
+    overflow: hidden;
+}
+
+.carousel .reviewsList {
+    display: inline-block;
+    width: 300%;
+    margin-left: 0;
+    transition: all 1s;
+}
+
+.carousel .reviewsItem {
+    display: inline-block;
+    width: calc(100% / 3 );
+    float: left;
+    padding: 15px;
+}
+
+.carousel .reviewsContent{
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+.clientsReviewsBox .sliderLine .slider.sliderActive {
+    padding: 0 10px;
+    border-color: white;
+    background-color: white;
+}
