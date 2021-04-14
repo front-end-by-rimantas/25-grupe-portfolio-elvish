@@ -12,7 +12,7 @@
 .headerBar {
     padding: 10px;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     background-color: transparent;
     transition: background-color 1s;
 }
@@ -30,6 +30,8 @@
     padding: 0 14px;
     position: relative;
     transition: color 1s;
+    cursor: pointer;
+    user-select: none;
 }
 .headerBar .meniu-bar-icon {
     color: white;
@@ -53,6 +55,21 @@
     transform: translateX(-50%);
     transition: opacity 0.5s;
 }
+.headerBar .meniu-bar-selector.selectedSelector::before {
+    display: inline-block;
+    opacity: 1;
+    content: '';
+    border: 1px solid white;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+}
 
 /* ****************************** WHITE HEADER **************************************** */
 
@@ -60,7 +77,7 @@
     background-color: white;    
     padding: 10px;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     transition: background-color 1s; 
     box-shadow: 0px 1px 10px grey;
 }
@@ -79,6 +96,8 @@
     position: relative;
     transition: color 1s;
     outline: none;
+    cursor: pointer;
+    user-select: none;
 }
 .headerBar-white .meniu-bar-icon {
     color: black;
@@ -102,8 +121,24 @@
     transform: translateX(-50%);
     transition: opacity 0.5s;
 }
-.meniu-bar-selector:hover::before, 
-.meniu-bar-selector:focus::before {
+.headerBar-white .meniu-bar-selector.selectedSelector::before {
+    display: inline-block;
+    opacity: 1;
+    content: '';
+    border: 1px solid #000;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+}
+
+
+.meniu-bar-selector:hover::before {
     display: inline-block;
     opacity: 1;
 }
