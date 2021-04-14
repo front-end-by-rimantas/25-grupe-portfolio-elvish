@@ -42,6 +42,9 @@
 /* our work */
 
 /* our client */
+.clientsReviewsBox .fa.fa-asterisk {
+    color: var(--color-grey-lighter);
+}
 
 /* great people */
 
