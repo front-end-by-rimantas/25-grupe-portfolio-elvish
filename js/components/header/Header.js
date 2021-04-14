@@ -26,7 +26,6 @@ class Header {
         this.DOM = DOM;
 
         this.render();
-        this.scrollHeaderChange();
         this.scrollTo();
         this.selectedDot();
 
@@ -50,24 +49,11 @@ class Header {
     }
 
 
-    scrollHeaderChange() {
-        window.onscroll = () => {
-            const headerBar = document.querySelector('header');
-            if (window.pageYOffset > 0) {
-                headerBar.classList.remove('headerBar');
-                headerBar.classList.add('headerBar-white');       
-            } else {
-                headerBar.classList.remove('headerBar-white');
-                headerBar.classList.add('headerBar');
-            }
-        }      
-    }
-
     scrollTo() {
         const buton = document.querySelectorAll('.meniu-bar-selector');
         for (let i = 0; i < buton.length; i++) {
             buton[i].addEventListener('click', () => goTo(this.data[i].href));
-            console.log(this.data[i].href);
+                        
         }
     
         function goTo(selection) {
@@ -81,6 +67,29 @@ class Header {
     }
 
     selectedDot () {
+        window.onscroll = () => {
+        const headerBar = document.querySelector('header');
+        if (window.pageYOffset > 0) {
+            headerBar.classList.remove('headerBar');
+            headerBar.classList.add('headerBar-white');       
+        } else {
+            headerBar.classList.remove('headerBar-white');
+            headerBar.classList.add('headerBar');
+        }
+        const buton = document.querySelectorAll('.meniu-bar-selector');
+        for (let i = 0; i < buton.length; i++) {
+            const nuoroda = buton[i];
+            const duomenys = this.data;
+            nuoroda.addEventListener('scroll', mygtukas(nuoroda, i, duomenys));
+            function mygtukas (nuoroda, i, duomenys) {
+                if (duomenys[i].positionTop <= scrollY && scrollY < duomenys[i].positionBot) {
+                    nuoroda.classList.add('selectedSelector')
+                } else {
+                    nuoroda.classList.remove('selectedSelector')
+                };          
+            }
+        }    
+    }  
 
     }
 

@@ -31,6 +31,7 @@
     position: relative;
     transition: color 1s;
     cursor: pointer;
+    user-select: none;
 }
 .headerBar .meniu-bar-icon {
     color: white;
@@ -42,6 +43,21 @@
 .headerBar .meniu-bar-selector::before {
     display: inline-block;
     opacity: 0;
+    content: '';
+    border: 1px solid white;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+}
+.headerBar .meniu-bar-selector.selectedSelector::before {
+    display: inline-block;
+    opacity: 1;
     content: '';
     border: 1px solid white;
     width: 4px;
@@ -81,6 +97,7 @@
     transition: color 1s;
     outline: none;
     cursor: pointer;
+    user-select: none;
 }
 .headerBar-white .meniu-bar-icon {
     color: black;
@@ -104,8 +121,24 @@
     transform: translateX(-50%);
     transition: opacity 0.5s;
 }
-.meniu-bar-selector:hover::before, 
-.meniu-bar-selector:focus::before {
+.headerBar-white .meniu-bar-selector.selectedSelector::before {
+    display: inline-block;
+    opacity: 1;
+    content: '';
+    border: 1px solid #000;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+}
+
+
+.meniu-bar-selector:hover::before {
     display: inline-block;
     opacity: 1;
 }
