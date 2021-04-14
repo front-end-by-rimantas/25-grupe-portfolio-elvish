@@ -9,10 +9,15 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     font-size: 35px;
-    color: var(--color-main);
+    color: var(--color-grey-dark);
     font-weight: 500;
     margin-bottom: 8px;
 }
+
+.fa {
+    color: var(--color-grey-dark);
+}
+
 .main_headings > span{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -34,6 +39,7 @@
     width: 2rem;
     margin: 7px 0.5rem;
 }
+
 
 .center {
     text-align: center;
