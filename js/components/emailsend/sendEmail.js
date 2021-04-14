@@ -9,14 +9,30 @@ function logKey(e) {
   }
 }
 
+function isValidEmail(inputText) {
+const mailformat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if(inputText.match(mailformat)) {
+    return true;
+    } else {
+        alert('You have entered an invalid email address!');
+        // document.getElementById('sub-email').value = '';
+        return false;
+        }   
+}
+
+
 function sendEmail() {
     let recipient = document.getElementById('sub-email').value;
+    document.getElementById('sub-email').value = '';
     // console.log('Gavėjas: ', recipient);
     if (recipient === '') {
         return;
     }
+    if (!isValidEmail(recipient)) {
+        return;
+    }
     // console.log(`Jūs paspaudėte Subscribe knopką. Gavėjas: ${recipient}`);
-    document.getElementById('sub-email').value = '';
+    // document.getElementById('sub-email').value = '';
     Email.send({
       Host: 'smtp.gmail.com',
       Username: 'bit25.Webpage@gmail.com',
@@ -26,9 +42,9 @@ function sendEmail() {
       Subject: 'Subscription for the Elvish Webpage has been added successfully',
       Body: `Subscription for the Elvish Webpage has been added for ${recipient}.<br><br>Thank you!<br><br><br>© BIT-25 Team Elvish.`,
     })
-    .then(function (message) {
-       alert('mail sent successfully')
-    });
+    // .then(function (message) {
+       alert('mail sent successfully');
+    // });
   }
 
 export {sendEmail}
