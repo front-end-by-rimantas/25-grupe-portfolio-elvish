@@ -31,6 +31,9 @@
 /* hero */
 
 /* about me */
+.hello {
+    color: var(--color-main);
+}
 
 /* our services */
 
@@ -43,6 +46,9 @@
 /* our work */
 
 /* our client */
+.clientsReviewsBox .fa.fa-asterisk {
+    color: var(--color-grey-lighter);
+}
 
 /* great people */
 

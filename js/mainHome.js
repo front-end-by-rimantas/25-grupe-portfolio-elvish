@@ -11,8 +11,8 @@ import {fillPorgress, skills} from './components/pogress/progress.js'
 import {skillsData} from './data/skillsData.js'
 
 // our services
-import {ourServicesData} from './data/ourServicesData.js'
-import {ourServices} from './components/ourServices/ourServices.js'
+import {ourServicesData} from './data/ourServicesData.js';
+import {ourServices} from './components/ourServices/ourServices.js';
 // numbers
 import { achievementsData } from './data/achievementsData.js';
 import { Achievements } from './components/achievements/Achievements.js';
@@ -34,6 +34,8 @@ import { renderGreatPeople } from './components/greatPeople/renderGreatPeople.js
 // scroll action
 import transitions from './components/scrollAction.js';
 // our blog
+import {ourBlogsData} from './data/ourBlogsData.js'
+import {ourBlogs} from './components/ourBlogs/ourBlogs.js'
 // get in touch
 // footer
 import { footerData } from './data/footerData.js';
@@ -72,6 +74,7 @@ carousel()
 renderGreatPeople('#clients', greatPeopleData);
 // subscribe
 // our blog
+ourBlogs('#our_blogs_block', ourBlogsData);
 // get in touch
 // footer
 footerRender('#footer-icons', footerData)
