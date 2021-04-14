@@ -1,4 +1,4 @@
-function isValidOurBlogItem() {
+function isValidOurBlogItem(ourBlog) {
     if (typeof ourBlog !== 'object' ||
         Array.isArray(ourBlog)) {
         console.warn('ERROR: ourBlog yra netinkamo tipo');

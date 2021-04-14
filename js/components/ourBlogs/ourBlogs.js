@@ -27,7 +27,7 @@ function ourBlogs(selector, data) {
         
         // our-blog item validation
 
-        if (isValidOurBlogItem(ourBlog) ||
+        if (!isValidOurBlogItem(ourBlog) ||
             !ourBlog.active) {
                 continue;
             }
