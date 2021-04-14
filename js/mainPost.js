@@ -9,7 +9,8 @@ import { renderRecentPosts } from './components/blog-lifestyle/renderRecentPosts
 import { recentPosts } from './data/blogData/recentPostsData.js';
 import { tags } from './data/blogData/tagsData.js';
 import { renderTags } from './components/blog-lifestyle/renderTags.js'
-
+import { comments } from './data/blogData/commentsData.js';
+import { renderComments } from './components/blog-lifestyle/renderComments.js';
 // footer
 import { footerData } from './data/footerData.js';
 import { footerRender } from './components/footer/footerRender.js';
@@ -19,7 +20,11 @@ import { footerRender } from './components/footer/footerRender.js';
 //header
 document.getElementById('backToTop').style.display = "none";
 // blog post
-
+renderTags('#postsTags',tags);
+const tagElement = document.getElementById('postsTags');
+tagElement.querySelector('.blog-titles').style.display = "none";
+// comments
+renderComments('#comments', comments);
 // search column
 recentPosts.imgPath = '../../img/blog/'
 renderCategories('#categories', categories, "Categories");

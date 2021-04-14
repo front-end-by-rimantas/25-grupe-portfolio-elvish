@@ -12,8 +12,7 @@ import { archives } from './data/blogData/archivesData.js';
 import { renderRecentPosts } from './components/blog-lifestyle/renderRecentPosts.js'
 import { recentPosts } from './data/blogData/recentPostsData.js';
 import { tags } from './data/blogData/tagsData.js';
-import { renderTags } from './components/blog-lifestyle/renderTags.js'
-
+import { renderTags } from './components/blog-lifestyle/renderTags.js';
 // footer
 import { footerData } from './data/footerData.js';
 import { footerRender } from './components/footer/footerRender.js';

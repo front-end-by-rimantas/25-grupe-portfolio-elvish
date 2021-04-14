@@ -6,17 +6,23 @@
 /* 3rd party */
 @import './3rd-party/font-awesome.min.css';
 /* components */
+@import './components/a_Button.css';
 @import './components/blog.css';
 @import './components/footer.css';
+@import './components/get-in-touch.css';
 @import './components/header.css';
 @import './components/hero.css';
 @import './components/pages.css';
 
 /* CUSTOM STILIUS SEKCIJOMS */
 
-.main_headings{
+.postArea .main_headings{
     font-size: 25px;
     font-weight: 600;
+}
+
+.col-12.col-lg-8.bg-white.single-post{
+    margin-bottom: 20px;
 }
 
 /* header */
@@ -80,8 +86,18 @@
     text-decoration: none;
     color: var(--color-main);
 }
-
-
+/* comment form */
+.commentTitles{
+    text-align: start;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+form{
+    text-align: start;
+}
+.pt{
+    text-align: center;
+}
 /* footer */
 .container-fluid.footer-container{
     background-color: white;
