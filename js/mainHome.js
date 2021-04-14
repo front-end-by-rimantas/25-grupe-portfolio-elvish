@@ -10,8 +10,8 @@ import {fillPorgress, skills} from './components/pogress/progress.js'
 import {skillsData} from './data/skillsData.js'
 
 // our services
-import {ourServicesData} from './data/ourServicesData.js'
-import {ourServices} from './components/ourServices/ourServices.js'
+import {ourServicesData} from './data/ourServicesData.js';
+import {ourServices} from './components/ourServices/ourServices.js';
 // numbers
 import { achievementsData } from './data/achievementsData.js';
 import { Achievements } from './components/achievements/Achievements.js';
@@ -30,7 +30,11 @@ import { carousel } from './components/ourClients/carousel.js'
 import { greatPeopleData } from './data/greatPeopleData.js';
 import { renderGreatPeople } from './components/greatPeople/renderGreatPeople.js'
 // subscribe
+import { sendEmail } from './components/emailsend/sendEmail.js'
+// scroll action
 // our blog
+import {ourBlogsData} from './data/ourBlogsData.js'
+import {ourBlogs} from './components/ourBlogs/ourBlogs.js'
 // get in touch
 // footer
 import { footerData } from './data/footerData.js';
@@ -60,7 +64,9 @@ carousel()
 // great people
 renderGreatPeople('#clients', greatPeopleData);
 // subscribe
+// sendEmail('tomas.va@yahoo.com');
 // our blog
+ourBlogs('#our_blogs_block', ourBlogsData);
 // get in touch
 // footer
 footerRender('#footer-icons', footerData)

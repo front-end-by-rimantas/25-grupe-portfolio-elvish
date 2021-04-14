@@ -1,12 +1,14 @@
 .row-blog {
+    display: inline-block;
     padding-top: 38px;
+    width: 100%;
 }
 
 .blog-item {
     text-align: center;
     border-radius: 5px;
     padding: 8px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     margin-bottom: 18px;
     background-color: #fff;
 }
