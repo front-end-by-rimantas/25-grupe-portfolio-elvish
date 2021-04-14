@@ -2,7 +2,7 @@ const ourServicesData = {
     maxCount: 6,
     list: [
         {
-             icon: "server",
+             icon: "tasks",
              title: "Graphic Design",
              description: "The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.",
              active: true
