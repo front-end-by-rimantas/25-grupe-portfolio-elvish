@@ -2,13 +2,16 @@ import { isValidEmail } from '../../utils/isValidEmail.js'
 
 document.getElementById('email_sending').addEventListener('click', sendEmail);
 
-document.getElementById('sub-email').addEventListener('keypress', logKey);
+document.getElementById('sub-email').addEventListener('keydown', logKey);
 
 function logKey(e) {
     // console.log(`${e.code}`);
-    if (e.code === 'Enter') {
+    if (e.code === 'Escape') {
+        document.getElementById('sub-email').value = '';    
+    }
+        if (e.code === 'Enter') {
       sendEmail();
-  }
+    }
 }
 
 function sendEmail() {
