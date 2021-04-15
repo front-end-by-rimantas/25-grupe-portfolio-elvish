@@ -23,7 +23,7 @@ const ourBlogsData = {
              author: "By Envato",
              article: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
              information_link: "Read More...",
-             link_read_more: "./travel",
+             link_read_more: "./lifestyle",
              video: "#",
              icon: "play",
              blog_type: 'video',
@@ -37,7 +37,7 @@ const ourBlogsData = {
              author: "By Envato",
              article: "Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.",
              information_link: "Read More...",
-             link_read_more: "./food_drink",
+             link_read_more: "./lifestyle",
              blog_type: "img",
              active: true
         },
