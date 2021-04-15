@@ -1,15 +1,15 @@
-const allWorkSelectBtn = document.querySelector('.js-all-menu-btn');
-allWorkSelectBtn.addEventListener('click', () => filterSelection('all', allWorkSelectBtn));
-const seoWorkSelectBtn = document.querySelector('.js-seo-menu-btn');
-seoWorkSelectBtn.addEventListener('click', () => filterSelection('seo', seoWorkSelectBtn));
-const webdesignWorkSelectBtn = document.querySelector('.js-webdesign-menu-btn');
-webdesignWorkSelectBtn.addEventListener('click', () => filterSelection('webdesign', webdesignWorkSelectBtn));
-const workWorkSelectBtn = document.querySelector('.js-work-menu-btn');
-workWorkSelectBtn.addEventListener('click', () => filterSelection('workImg', workWorkSelectBtn));
-const wordpressWorkSelectBtn = document.querySelector('.js-wordpress-menu-btn');
-wordpressWorkSelectBtn.addEventListener('click', () => filterSelection('wordpress',wordpressWorkSelectBtn));
+// const allWorkSelectBtn = document.querySelector('.js-all-menu-btn');
+// allWorkSelectBtn.addEventListener('click', () => filterSelection('all', allWorkSelectBtn));
+// const seoWorkSelectBtn = document.querySelector('.js-seo-menu-btn');
+// seoWorkSelectBtn.addEventListener('click', () => filterSelection('seo', seoWorkSelectBtn));
+// const webdesignWorkSelectBtn = document.querySelector('.js-webdesign-menu-btn');
+// webdesignWorkSelectBtn.addEventListener('click', () => filterSelection('webdesign', webdesignWorkSelectBtn));
+// const workWorkSelectBtn = document.querySelector('.js-work-menu-btn');
+// workWorkSelectBtn.addEventListener('click', () => filterSelection('workImg', workWorkSelectBtn));
+// const wordpressWorkSelectBtn = document.querySelector('.js-wordpress-menu-btn');
+// wordpressWorkSelectBtn.addEventListener('click', () => filterSelection('wordpress',wordpressWorkSelectBtn));
 
-filterSelection("all", allWorkSelectBtn)
+//filterSelection("all", allWorkSelectBtn)
 function filterSelection(c,b) {
   var x, i;
   x = document.getElementsByClassName("work-img");

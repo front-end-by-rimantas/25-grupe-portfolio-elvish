@@ -21,7 +21,7 @@
 }
 
 .work-img{
-    display: none;
+    /* display: none; */
     margin-bottom: 30px;
     border-radius: 5px;
     cursor: pointer;
@@ -42,6 +42,9 @@
     position:absolute;
     margin-left: 30px;
     top: 10px;
+}
+.js-Wordpress-menu-btn::after{
+    content: none;
 }
 }
 
