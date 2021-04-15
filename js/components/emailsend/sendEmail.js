@@ -21,6 +21,9 @@ function sendEmail() {
         if (!isValidEmail(recipient)) {
             return;
         }
+    
+    localStorage.setItem(recipient, 'Subscribe ON');
+
     // console.log(`Jūs paspaudėte Subscribe knopką arba Enter. Gavėjas: ${recipient}`);
     Email.send({
       Host: 'smtp.gmail.com',

@@ -1,6 +1,5 @@
 // IMPORT
 // blog
-import transitions from './components/scrollAction.js';
 // search column
 import { renderCategories } from './components/blog-lifestyle/renderCategories.js'
 import { categories } from './data/blogData/categoriesData.js';

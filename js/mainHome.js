@@ -38,6 +38,7 @@ import { sendEmail } from './components/emailsend/sendEmail.js'
 import {ourBlogsData} from './data/ourBlogsData.js'
 import {ourBlogs} from './components/ourBlogs/ourBlogs.js'
 // get in touch
+import { sendGetInTouch } from './components/getInTouchDataSend/sendGetInTouch.js'
 // footer
 import { footerData } from './data/footerData.js';
 import { footerRender } from './components/footer/footerRender.js';
@@ -67,7 +68,6 @@ carousel()
 // great people
 renderGreatPeople('#clients', greatPeopleData);
 // subscribe
-// sendEmail('tomas.va@yahoo.com');
 // our blog
 ourBlogs('#our_blogs_block', ourBlogsData);
 // get in touch
