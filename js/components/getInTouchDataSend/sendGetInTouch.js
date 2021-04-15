@@ -2,14 +2,37 @@ import { isValidEmail } from '../../utils/isValidEmail.js'
 
 document.getElementById('getInTouchSending').addEventListener('click', sendGetInTouch);
 
-// document.getElementById('email').addEventListener('keypress', logKey);
+document.getElementById('username').addEventListener('keydown', logKey1);
+function logKey1(e) {
+    // console.log(`Username ${e.code}`);
+    if (e.code === 'Escape') {
+        document.getElementById('username').value = '';
+    }
+}
 
-// function logKey(e) {
-//     // console.log(`${e.code}`);
-//     if (e.code === 'Enter') {
-//       sendGetInTouch();
-//   }
-// }
+document.getElementById('email').addEventListener('keydown', logKey2);
+function logKey2(e) {
+    // console.log(`Email ${e.code}`);
+    if (e.code === 'Escape') {
+        document.getElementById('email').value = '';
+    }
+}
+
+document.getElementById('subject').addEventListener('keydown', logKey3);
+function logKey3(e) {
+    // console.log(`Subject ${e.code}`);
+    if (e.code === 'Escape') {
+        document.getElementById('subject').value = '';
+    }
+}
+
+document.getElementById('message').addEventListener('keydown', logKey4);
+function logKey4(e) {
+    // console.log(`Message ${e.code}`);
+    if (e.code === 'Escape') {
+        document.getElementById('message').value = '';
+    }
+}
 
 function sendGetInTouch() {
     const recipient = document.getElementById('email').value;
