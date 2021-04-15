@@ -1,8 +1,7 @@
 // IMPORT
 // header
-import { meniuData } from './data/headerMeniuData.js';
-import { meniuRender } from './components/header/meniuRender.js';
-import meniuScrollDown from './components/header/meniuScroll.js'
+import { Header } from './components/header/Header.js'
+import { headerData } from './data/headerMeniuData.js';
 // hero
 import scrollDown from './components/scroll-down.js'
 import textChange from './components/textChange.js'
@@ -11,9 +10,11 @@ import {fillPorgress, skills} from './components/pogress/progress.js'
 import {skillsData} from './data/skillsData.js'
 
 // our services
-import {ourServicesData} from './data/ourServicesData.js'
-import {ourServices} from './components/ourServices/ourServices.js'
+import {ourServicesData} from './data/ourServicesData.js';
+import {ourServices} from './components/ourServices/ourServices.js';
 // numbers
+import { achievementsData } from './data/achievementsData.js';
+import { Achievements } from './components/achievements/Achievements.js';
 // education and experience
 import { educationData } from './data/educationData.js';
 import { experienceData } from './data/educationData.js';
@@ -26,11 +27,16 @@ import { reviewsData } from './data/reviewsData.js';
 import { reviewsRender } from './components/ourClients/reviewsRender.js';
 import { carousel } from './components/ourClients/carousel.js'
 // great people
+import { greatPeopleData } from './data/greatPeopleData.js';
+import { renderGreatPeople } from './components/greatPeople/renderGreatPeople.js'
 // subscribe
+import { sendEmail } from './components/emailsend/sendEmail.js'
 // scroll action
-import transitions from './components/scrollAction.js';
 // our blog
+import {ourBlogsData} from './data/ourBlogsData.js'
+import {ourBlogs} from './components/ourBlogs/ourBlogs.js'
 // get in touch
+import { sendGetInTouch } from './components/getInTouchDataSend/sendGetInTouch.js'
 // footer
 import { footerData } from './data/footerData.js';
 import { footerRender } from './components/footer/footerRender.js';
@@ -38,15 +44,7 @@ import { footerRender } from './components/footer/footerRender.js';
 
 // FUNKCIJU PANAUDOJIMAS
 // header
-meniuRender('#meniuBlock', meniuData);
-document.querySelector('.meniubtn').addEventListener('click', () => meniuScrollDown("Home"))
-document.querySelector('.aboutbtn').addEventListener('click', () => meniuScrollDown("about"))
-document.querySelector('.servicesbtn').addEventListener('click', () => meniuScrollDown("services"))
-document.querySelector('.educationbtn').addEventListener('click', () => meniuScrollDown("education"))
-document.querySelector('.workbtn').addEventListener('click', () => meniuScrollDown("ourWork"))
-document.querySelector('.clientbtn').addEventListener('click', () => meniuScrollDown("ourClients"))
-document.querySelector('.blogbtn').addEventListener('click', () => meniuScrollDown("blog"))
-document.querySelector('.contactbtn').addEventListener('click', () => meniuScrollDown("contact"))
+new Header('#meniuBlock', headerData)
 // hero
 // about me
 skills("#progressCol1","#progressCol2", skillsData);
@@ -55,6 +53,7 @@ document.addEventListener("scroll", () => fillPorgress(skillsData));
 // our services
 ourServices('#our_services_block', ourServicesData);
 // numbers
+const achievement = new Achievements('#numbers_block', achievementsData);
 // education and experience
 educationRender('#educationExperience', educationData, experienceData)
 // hire me
@@ -64,10 +63,12 @@ reviewsRender('#reviews', reviewsData);
 document.querySelector('#reviews').classList.add('carousel');
 carousel()
 // great people
+renderGreatPeople('#clients', greatPeopleData);
 // subscribe
 // our blog
+ourBlogs('#our_blogs_block', ourBlogsData);
 // get in touch
 // footer
 footerRender('#footer-icons', footerData)
 // back to top button
-document.querySelector('.backToTopBtn').addEventListener('click', () => meniuScrollDown("Home"))
+// document.querySelector('.backToTopBtn').addEventListener('click', () => meniuScrollDown("Home"))
