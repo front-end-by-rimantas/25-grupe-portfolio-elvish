@@ -2,7 +2,6 @@
 // blog
 import { ourBlogsData } from './data/ourBlogsData.js'
 import { ourBlogs } from './components/ourBlogs/ourBlogs.js'
-import transitions from './components/scrollAction.js';
 import { renderPages } from './components/blog-lifestyle/renderPages.js'
 import {lifestyleData} from './data/blogData/lifestyleData.js'
 // search column
