@@ -146,6 +146,7 @@ form{
 
 .comment-form{
     display: inline-block;
+    width: 100%;
 }
 
 /* footer */
