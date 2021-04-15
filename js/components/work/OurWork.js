@@ -85,9 +85,14 @@ class OurWork {
         }
         HTML += `</div></div>`;
         
-        HTML += `<div class="row img-row">`;
+        HTML += `<div class="row ">`;
         for (const item of this.data.list) {
-            HTML += `<img src="${this.data.imgPath + item.img}" alt="${item.name}" class="col-12 col-lg-4 col-xxl- work-img ${item.categories}">`;
+            HTML += `<div class="col-12 col-lg-4 img-row"><img src="${this.data.imgPath + item.img}" alt="${item.name}" class="work-img ${item.categories}">
+            <div class="imageOverlay">
+            <h3 class="workTitle">${item.title}</h>
+            <h4 class="workSubtitle">${item.subtitle}</h4>
+            </div>
+            </div>`;
         }
         HTML += `</div>`;
         

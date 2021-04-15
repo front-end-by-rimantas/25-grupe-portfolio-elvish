@@ -25,8 +25,13 @@
     margin-bottom: 30px;
     border-radius: 5px;
     cursor: pointer;
+    width:100%;
     
+    transition: all 0.5s ease;
     
+}
+.work-img:hover{
+    transform: scale(1.1);
 }
 .selected, .work-menu-button:hover{
     background-color: var(--color-main);
@@ -34,6 +39,64 @@
     border-radius: 5px;
     transition: all 0.5s;
 }
+.img-row{
+    position:relative;
+    overflow:hidden;
+    
+}
+
+.work-img:hover + .imageOverlay{
+    visibility: visible; 
+}
+.work-img:focus + .imageOverlay{
+    visibility: visible; 
+}
+
+.imageOverlay:hover{
+    visibility: visible;
+} 
+
+
+.imageOverlay{
+    visibility: hidden;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    width: calc(100% - 20px);
+    height: calc(100% - 50px);
+    position: absolute;
+    top: 10;
+    right: 10;
+    left: 10;
+    bottom: 40px;
+    margin-left: 10px;
+    z-index: 0;
+    border-radius: 5px;
+    transition: all 0.5s;
+    
+}
+.workTitle{
+    display: inline-block;
+    position:absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 20px;
+    color: white;
+    transition-timing-function: ease;
+}
+
+.workSubtitle{
+    display: inline-block;
+    position:absolute;
+    top: 55px;
+    right: 25px;
+    font-size:15px;
+    color: var(--color-grey-border);
+}
+
+
+
+
+
 
 @media (min-width: 767px) {
 .work-menu-button::after{
@@ -58,6 +121,6 @@
     }
 
     .visible{
-        visibility: visible;
+        display: inline-block;
     }
     
