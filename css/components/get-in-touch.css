@@ -87,5 +87,6 @@ form> .form-row> input {
     overflow: auto;
     resize: vertical;
     min-height: 110px;
+    max-height: 330px;
     margin-bottom: 16px;
 }

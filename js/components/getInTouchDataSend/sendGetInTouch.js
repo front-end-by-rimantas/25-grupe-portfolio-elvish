@@ -2,14 +2,37 @@ import { isValidEmail } from '../../utils/isValidEmail.js'
 
 document.getElementById('getInTouchSending').addEventListener('click', sendGetInTouch);
 
-// document.getElementById('email').addEventListener('keypress', logKey);
+document.getElementById('username').addEventListener('keydown', logKeyUsername);
+function logKeyUsername(e) {
+    // console.log(`Username ${e.code}`);
+    if (e.code === 'Escape') {
+        document.getElementById('username').value = '';
+    }
+}
 
-// function logKey(e) {
-//     // console.log(`${e.code}`);
-//     if (e.code === 'Enter') {
-//       sendGetInTouch();
-//   }
-// }
+document.getElementById('email').addEventListener('keydown', logKeyEmail);
+function logKeyEmail(e) {
+    // console.log(`Email ${e.code}`);
+    if (e.code === 'Escape') {
+        document.getElementById('email').value = '';
+    }
+}
+
+document.getElementById('subject').addEventListener('keydown', logKeySubject);
+function logKeySubject(e) {
+    // console.log(`Subject ${e.code}`);
+    if (e.code === 'Escape') {
+        document.getElementById('subject').value = '';
+    }
+}
+
+document.getElementById('message').addEventListener('keydown', logKeyMessage);
+function logKeyMessage(e) {
+    // console.log(`Message ${e.code}`);
+    if (e.code === 'Escape') {
+        document.getElementById('message').value = '';
+    }
+}
 
 function sendGetInTouch() {
     const recipient = document.getElementById('email').value;
@@ -28,8 +51,11 @@ function sendGetInTouch() {
 
     // console.log(touchName, recipient, subject, message);
 
-    localStorage.setItem(recipient, 'GIT Message ON');
-
+    const formData = {email: recipient, subject: subject, message: message};
+    const formDataAsText = JSON.stringify(formData);
+    localStorage.setItem(touchName, formDataAsText);
+    // console.log(formData, formDataAsText);
+    
     // console.log(`Jūs paspaudėte Send message knopką. Gavėjas: ${recipient}`);
     Email.send({
       Host: 'smtp.gmail.com',
