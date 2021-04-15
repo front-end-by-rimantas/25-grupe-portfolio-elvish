@@ -2,32 +2,32 @@ import { isValidEmail } from '../../utils/isValidEmail.js'
 
 document.getElementById('getInTouchSending').addEventListener('click', sendGetInTouch);
 
-document.getElementById('username').addEventListener('keydown', logKey1);
-function logKey1(e) {
+document.getElementById('username').addEventListener('keydown', logKeyUsername);
+function logKeyUsername(e) {
     // console.log(`Username ${e.code}`);
     if (e.code === 'Escape') {
         document.getElementById('username').value = '';
     }
 }
 
-document.getElementById('email').addEventListener('keydown', logKey2);
-function logKey2(e) {
+document.getElementById('email').addEventListener('keydown', logKeyEmail);
+function logKeyEmail(e) {
     // console.log(`Email ${e.code}`);
     if (e.code === 'Escape') {
         document.getElementById('email').value = '';
     }
 }
 
-document.getElementById('subject').addEventListener('keydown', logKey3);
-function logKey3(e) {
+document.getElementById('subject').addEventListener('keydown', logKeySubject);
+function logKeySubject(e) {
     // console.log(`Subject ${e.code}`);
     if (e.code === 'Escape') {
         document.getElementById('subject').value = '';
     }
 }
 
-document.getElementById('message').addEventListener('keydown', logKey4);
-function logKey4(e) {
+document.getElementById('message').addEventListener('keydown', logKeyMessage);
+function logKeyMessage(e) {
     // console.log(`Message ${e.code}`);
     if (e.code === 'Escape') {
         document.getElementById('message').value = '';
@@ -51,8 +51,11 @@ function sendGetInTouch() {
 
     // console.log(touchName, recipient, subject, message);
 
-    localStorage.setItem(recipient, 'GIT Message ON');
-
+    const formData = {email: recipient, subject: subject, message: message};
+    const formDataAsText = JSON.stringify(formData);
+    localStorage.setItem(touchName, formDataAsText);
+    // console.log(formData, formDataAsText);
+    
     // console.log(`Jūs paspaudėte Send message knopką. Gavėjas: ${recipient}`);
     Email.send({
       Host: 'smtp.gmail.com',
