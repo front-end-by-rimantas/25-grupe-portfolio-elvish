@@ -13,7 +13,7 @@
     width: 100%;
     outline: none;
 }
-.subscribe-form > input[type=button]{
+.subscribe-form > button[type=submit]{
     position: absolute;
     right: 5px;
     border-radius: 25px;
