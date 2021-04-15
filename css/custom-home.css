@@ -53,7 +53,7 @@
 /* great people */
 
 /* subscribe */
-.subscribe-form > input[type=button]{
+.subscribe-form > button[type=submit]{
     padding: 10px 30px;
     font-size: 18px;
 }

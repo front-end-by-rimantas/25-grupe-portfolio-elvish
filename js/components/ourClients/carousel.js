@@ -1,9 +1,9 @@
-let activeSliderIndex = 0;
-const autoRotateInt = 10000;
-
 function carousel() {
+    const autoRotateInt = 10000;
     const sliderButtons = document.querySelectorAll('.slider');
     const list = document.querySelector('.reviewsList');
+    let activeSliderIndex = 0;
+
     for (let i = 0; i < sliderButtons.length; i++) {
         const slider = sliderButtons[i];
         slider.i = i;
