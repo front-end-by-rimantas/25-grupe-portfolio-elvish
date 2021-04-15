@@ -21,7 +21,7 @@
 }
 
 .work-img{
-    /* display: none; */
+    display: none;
     margin-bottom: 30px;
     border-radius: 5px;
     cursor: pointer;
@@ -36,7 +36,7 @@
 }
 
 @media (min-width: 767px) {
-.st-aft::after{
+.work-menu-button::after{
     content: "*";
     color: #bbb;
     position:absolute;
@@ -60,3 +60,4 @@
     .visible{
         visibility: visible;
     }
+    

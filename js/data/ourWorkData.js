@@ -16,7 +16,7 @@ const workData = {
         {
             img: '3.jpg',
             name: 'Vinyl',
-            categories: 'workImg'
+            categories: 'work'
         },
         {
             img: '4.jpg',
@@ -26,7 +26,7 @@ const workData = {
         {
             img: '5.jpg',
             name: 'Work book',
-            categories: 'seo workImg'
+            categories: 'seo work'
         },
         {
             img: '6.jpg',

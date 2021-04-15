@@ -23,7 +23,6 @@ import { educationRender } from './components/education/educationRender.js';
 // our work
 import { OurWork} from './components/work/OurWork.js'
 import { workData } from './data/ourWorkData.js'
-import filterSelection from './components/work/work-filter.js';
 // our client
 import { reviewsData } from './data/reviewsData.js';
 import { reviewsRender } from './components/ourClients/reviewsRender.js';
@@ -61,6 +60,7 @@ educationRender('#educationExperience', educationData, experienceData)
 // hire me
 // our work
 const workImages = new OurWork('#ourWork', workData);
+
 // our client
 reviewsRender('#reviews', reviewsData);
 document.querySelector('#reviews').classList.add('carousel');
