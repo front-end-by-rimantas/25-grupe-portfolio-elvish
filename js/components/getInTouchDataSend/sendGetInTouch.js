@@ -50,10 +50,13 @@ function sendGetInTouch() {
     const message = document.getElementById('message').value;
 
     // console.log(touchName, recipient, subject, message);
+    
+    const d = new Date();
+    const dT = d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate() + '  ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
 
-    const formData = {email: recipient, subject: subject, message: message};
+    const formData = {name: touchName, email: recipient, subject: subject, message: message};
     const formDataAsText = JSON.stringify(formData);
-    localStorage.setItem(touchName, formDataAsText);
+    localStorage.setItem(dT, formDataAsText);
     // console.log(formData, formDataAsText);
     
     // console.log(`Jūs paspaudėte Send message knopką. Gavėjas: ${recipient}`);
