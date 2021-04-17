@@ -52,8 +52,9 @@ function sendGetInTouch() {
     // console.log(touchName, recipient, subject, message);
     
     const d = new Date();
-    const dT = d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate() + '  ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
-
+    const updatedMonth = (parseInt(d.getMonth()) + 1).toString();
+    const dT = d.getFullYear() + '-' + updatedMonth + '-' + d.getDate() + '  ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+   
     const formData = {name: touchName, email: recipient, subject: subject, message: message};
     const formDataAsText = JSON.stringify(formData);
     localStorage.setItem(dT, formDataAsText);
