@@ -51,7 +51,11 @@
 
 .img-row:hover .imageOverlay{
     visibility: visible; 
-    
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
 }
 
 .img-row:hover .work-img{
@@ -62,34 +66,67 @@
 .imageOverlay{
     visibility: hidden;
     content: '';
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: transparent;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    left: 10px;
-    bottom: 10px;
+    top: 50px;
+    right: 50px;
+    left: 50px;
+    bottom: 50px;
     z-index: 0;
     border-radius: 5px;
-    transition: all 150ms ease-in-out 200ms
+    transition: all 200ms ease-in-out 200ms
     
 }
 .workTitle{
+    visibility: hidden;
     display: inline-block;
     position:absolute;
     top: 30px;
     right: 25px;
     font-size: 20px;
     color: white;
-    transition-timing-function: ease;
+    transition: all 200ms 200ms;
+    
+}
+.workTitle::before, .workSubtitle::before{
+    visibility: hidden;
+    content: '';
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    transition: all 200ms ease-in-out 200ms;
+}
+.img-row:hover .workTitle::before{
+    visibility: visible;
+    top: 0px;
+    right: 100%;
+    left: 0px;
+    bottom: 0px;
+}
+.img-row:hover .workSubtitle::before{
+    visibility: visible;
+    top: 0px;
+    right: 0px;
+    left: 100%;
+    bottom: 0px;
+}
+
+.img-row:hover .workSubtitle, .img-row:hover .workTitle{
+    visibility: visible;
 }
 
 .workSubtitle{
+    visibility: hidden;
     display: inline-block;
     position:absolute;
     top: 55px;
     right: 25px;
     font-size:15px;
     color: var(--color-grey-border);
+    transition: all 200ms 200ms;
 }
 
 @media (min-width: 364px){
