@@ -1,3 +1,6 @@
+.our-work .row{
+    overflow:hidden;
+}
 .our-work .work-m-b {
     display: inline-block;
 }
@@ -22,16 +25,16 @@
 
 .work-img{
     display: none;
-    margin-bottom: 30px;
     border-radius: 5px;
     cursor: pointer;
-    width:100%;
-    
+    height:100%;
     transition: all 0.5s ease;
-    
+    overflow: hidden;
+    object-fit: cover;
 }
 .work-img:hover{
     transform: scale(1.1);
+    
 }
 .selected, .work-menu-button:hover{
     background-color: var(--color-main);
@@ -40,38 +43,34 @@
     transition: all 0.5s;
 }
 .img-row{
+    display: inline-block;
     position:relative;
     overflow:hidden;
+    margin-bottom: 30px;
+}
+
+.img-row:hover .imageOverlay{
+    visibility: visible; 
     
 }
 
-.work-img:hover + .imageOverlay{
-    visibility: visible; 
+.img-row:hover .work-img{
+    transform: scale(1.1);
 }
-.work-img:focus + .imageOverlay{
-    visibility: visible; 
-}
-
-.imageOverlay:hover{
-    visibility: visible;
-} 
 
 
 .imageOverlay{
     visibility: hidden;
     content: '';
     background-color: rgba(0, 0, 0, 0.7);
-    width: calc(100% - 20px);
-    height: calc(100% - 50px);
     position: absolute;
-    top: 10;
-    right: 10;
-    left: 10;
-    bottom: 40px;
-    margin-left: 10px;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
     z-index: 0;
     border-radius: 5px;
-    transition: all 0.5s;
+    transition: all 150ms ease-in-out 200ms
     
 }
 .workTitle{
@@ -93,9 +92,21 @@
     color: var(--color-grey-border);
 }
 
-
-
-
+@media (min-width: 364px){
+    .img-row{
+        height: 251px;
+    }
+}
+@media (min-width: 469px){
+    .img-row{
+        height: 330px;
+    }
+}
+@media (min-width: 574px){
+    .img-row{
+        height: 382px;
+    }
+}
 
 
 @media (min-width: 767px) {
@@ -109,18 +120,38 @@
 .js-Wordpress-menu-btn::after{
     content: none;
 }
+.img-row{
+    height: 517px;
+}
 }
 
 @media (max-width: 990px) {
     .work-img{
         margin-bottom: 30px;
     }
-    .img-row>img:last-of-type{
+    .img-row img:last-of-type{
         margin-bottom: 10px;
     }
+    }
+
+    
+    @media (min-width: 990px) {
+        .img-row{
+            height: 217px;
+        }
+    }
+    
+    @media (min-width: 1198px){
+        .img-row{
+            height: 262px;
+        }
+    }
+    @media (min-width: 1398px){
+        .img-row{
+            height: 307px;
+        }
     }
 
     .visible{
         display: inline-block;
     }
-    
