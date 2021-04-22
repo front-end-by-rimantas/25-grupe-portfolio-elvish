@@ -18,10 +18,11 @@ import { Achievements } from './components/achievements/Achievements.js';
 // education and experience
 import { educationData } from './data/educationData.js';
 import { experienceData } from './data/educationData.js';
-import { educationRender } from './components/education/educationRender.js'
+import { educationRender } from './components/education/educationRender.js';
 // hire me
 // our work
-import filterSelection from './components/work/work-filter.js';
+import { OurWork} from './components/work/OurWork.js'
+import { workData } from './data/ourWorkData.js'
 // our client
 import { reviewsData } from './data/reviewsData.js';
 import { reviewsRender } from './components/ourClients/reviewsRender.js';
@@ -58,6 +59,8 @@ const achievement = new Achievements('#numbers_block', achievementsData);
 educationRender('#educationExperience', educationData, experienceData)
 // hire me
 // our work
+const workImages = new OurWork('#ourWork', workData);
+
 // our client
 reviewsRender('#reviews', reviewsData);
 document.querySelector('#reviews').classList.add('carousel');
